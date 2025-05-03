@@ -1,0 +1,44 @@
+.hotel-weather {
+  overflow hidden
+  font-size 16px
+  font-weight bold
+  z-index 1
+  position absolute
+  right 20px
+  top 20px
+  border-radius 3px
+  white-space nowrap
+  word-spacing -4px
+  text-align center
+
+  &__item {
+    border-width 1px 1px 1px 0
+    border-style solid
+    border-color #dcdcdc
+    background-color #fafafa
+    padding 0 10px
+    display inline-block
+    word-spacing normal
+
+    &:first-child {
+      border-left 1px solid #dcdcdc
+      border-radius 3px 0 0 3px
+    }
+
+    &:last-child {
+      border-radius 0 3px 3px 0
+    }
+  }
+
+  &__day {
+    font-weight normal
+    display block
+    font-size 11px
+    margin 0 0 3px 0
+  }
+
+  &__icon {
+    vertical-align middle
+    margin 0 5px 0 0
+  }
+}

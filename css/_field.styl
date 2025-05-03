@@ -1,0 +1,195 @@
+.field {
+  display block
+  margin .76em 0 0
+
+  &__label {
+    display block
+    margin-bottom .4em
+    font-weight 600
+
+    ^[0]_rating & {
+      display inline-block
+      vertical-align middle
+    }
+  }
+
+  &__control {
+    display flex
+    justify-content space-between
+    flex-wrap nowrap
+
+    ^[0]_rating & {
+      display inline-block
+      vertical-align middle
+    }
+
+    .rating-circle {
+      width 415px
+    }
+  }
+
+  &__text {
+    background-color $fieldBackground
+    background-image linear-gradient(to bottom, transparent 0%, transparent 100%)
+    border 1px solid $fieldBorder
+    border-radius 0
+    width 100%
+    box-sizing border-box
+    box-shadow none
+
+    input& {
+      line-height 3em
+      height 3em
+      padding 0 .4em
+    }
+
+    textarea& {
+      height 120px
+      padding .76em .4em
+    }
+
+    select& {
+      line-height 3em
+      height 3em
+      padding 0 0 0 .4em
+    }
+
+    ^[0]__control & {
+      margin-left .25em
+      margin-right .25em
+      min-width 0 // правило для мазилы
+
+      &:first-child {
+        margin-left 0
+      }
+
+      &:last-child {
+        margin-right 0
+      }
+    }
+
+    &_width-day {
+      flex-basis 50px
+      max-width 50px // правило для мазилы
+    }
+
+    &_width-month {
+      flex-basis 50px
+      max-width 50px // правило для мазилы
+    }
+
+    &_width-short-num {
+      flex-basis 80px
+      max-width 80px // правило для мазилы
+    }
+  }
+
+  &-checkbox {
+    display inline-block
+
+    &__input {
+      display none
+
+      &:checked + ^[1]__label:before {
+        content '\e60c'
+      }
+    }
+
+    &__label {
+      position relative
+      padding 0 0 0 2em
+
+      &:before {
+        content ''
+        font-family module5-icon
+        width 1.3em
+        height 1.3em
+        border 1px solid $fieldBorder
+        background-color #fff
+        position absolute
+        left 0
+        top .1em
+        line-height 1.4
+        font-size .9em
+        text-align center
+        color link-color
+      }
+    }
+  }
+
+  &_error {
+    position relative
+
+    & ^[0]__text {
+      border-color #b4675f
+    }
+
+    & ^[0]__error {
+      display block
+    }
+  }
+
+  &_info {
+    position relative
+
+    & ^[0]__info {
+      display block
+    }
+  }
+
+  &__error {
+    display none
+    position absolute
+    min-width 100%
+    right -1px
+    top 5.4em
+    color #d84c2f
+    border 1px solid #f3c9c0
+    padding 6px 0
+    text-align center
+    background-color #f3c9c0
+    border-radius 3px
+    box-shadow 0 2px 2px rgba(49,49,64,.25)
+    z-index 1
+
+    &:after {
+      content ''
+      position absolute
+      top -4px
+      right 18px
+      width 6px
+      height 6px
+      background-color #f3c9c0
+      transform rotate(45deg)
+    }
+  }
+
+  &__info {
+    display none
+    position absolute
+    min-width 100%
+    right -1px
+    top 5.4em
+    color $colorBlack
+    border 1px solid #dfe0de
+    padding 6px 0
+    text-align center
+    background-color #fff
+    border-radius 3px
+    box-shadow 0 2px 2px rgba(49,49,64,.25)
+    z-index 1
+
+    &:after {
+      content ''
+      position absolute
+      top -4px
+      right 18px
+      width 6px
+      height 6px
+      background-color #fff
+      border-left 1px solid #dfe0de
+      border-top 1px solid #dfe0de
+      transform rotate(45deg)
+    }
+  }
+}

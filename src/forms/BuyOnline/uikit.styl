@@ -1,0 +1,407 @@
+.uikit-text {
+
+  &_buy-online {
+    margin 0 0 10px
+
+    &::after {
+      content ''
+      position absolute
+      top 20px
+      right 1px
+      width 12px
+      height 13px
+      background-image url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='13' viewBox='0 0 12 13'%3E%3Cpath fill='%234db45e' d='M11 0L4 10.7.9 7 0 8.2 4.2 13 12 1z'/%3E%3C/svg%3E%0A")
+      background-repeat no-repeat
+      opacity 0
+      z-index 1
+      transition all .2s
+    }
+  }
+
+  &_buy-online&_half-col {
+    width 88%
+  }
+
+  &_buy-online&_passport-field {
+    flex-grow 0
+  }
+
+  &_buy-online&_valid {
+    position relative
+
+    &::after {
+      opacity 1
+    }
+
+    .uikit-text {
+
+      &__input {
+        padding-right 25px
+        border-color #dcdcdc
+
+        &:hover {
+          border-color #dcdcdc
+        }
+      }
+    }
+  }
+
+  &_buy-online&_datepicker {
+
+    &::after {
+      top 5px
+    }
+  }
+
+  &_buy-online&_valid&_datepicker,
+  &_buy-online&_error&_datepicker {
+
+    &::after {
+      top 5px
+    }
+  }
+
+  &__title {
+
+    &_buy-online {
+      margin 0
+      font-size 11px
+      color #313140
+    }
+  }
+
+  &__input {
+
+    &_buy-online {
+      height auto
+      padding 4px 0px 4px 4px
+      font-size 14px
+      line-height normal
+      border 0
+      border-bottom 1px solid #dcdcdc
+
+      &:hover {
+        border-color #dcdcdc !important
+      }
+
+      &:focus {
+        border-color #007cb9 !important
+      }
+
+      &::placeholder {
+        color #dcdcdc
+      }
+    }
+
+    &_buy-online&_error {
+      padding-right 25px
+      border-color #eb001b
+
+      &:hover {
+        border-color #eb001b
+      }
+    }
+
+    &_buy-online&_datepicker {
+      padding-right 20px
+      padding-left 2px
+    }
+
+    &_buy-online&_passport-field {
+      // TO DO Danil Ziserman - единственный способ аккуратно выбрать инпуты с разными документами, нужно будет править рендер методы этих полей
+      &[placeholder="xx-xx xxxxxx"],
+      &[placeholder="xx xxxxxxx"] {
+        width 306px
+      }
+
+      &[placeholder="xxxx xxxxxx"] {
+        width 223px
+      }
+    }
+  }
+
+  &__tooltip-icon-transition {
+
+    &_buy-online {
+      top 11px
+      right 0
+    }
+  }
+
+  &__hint {
+
+    &_buy-online {
+      color transparent
+      background-color transparent
+      position relative
+      right -1px
+      width 13px
+      height 13px
+      margin-top 0
+      padding 2px
+
+      &::before {
+        content ''
+        position absolute
+        top 0
+        bottom 0
+        left 0
+        right 0
+        width 13px
+        height 13px
+        margin auto
+        background-image url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 15'%3E%3Cpath stroke='%23eb001b' stroke-miterlimit='10' stroke-width='1.5' d='M13 2L2 13M2 2l11 11'/%3E%3C/svg%3E%0A")
+        background-repeat no-repeat
+      }
+    }
+
+    &_buy-online&_error-msg:hover {
+
+      & ~ .uikit-tooltip_error {
+        transform none
+      }
+    }
+  }
+}
+
+.uikit-tooltip {
+  display none
+  font-size 12px
+
+  &_buy-online&_error {
+    position static
+    display block
+    margin-top 3px
+    padding 0
+    color #eb001b
+    text-align left
+    background-color transparent
+    box-shadow none
+    z-index 1
+    opacity 1
+    transform none
+
+    &::after {
+      display none
+    }
+  }
+}
+
+.uikit-datepicker {
+
+  &_buy-online {
+    flex-grow 0
+    width 100% !important
+    max-width 100% !important
+  }
+
+  &_buy-online&_opened {
+    border-color #00c3ff
+  }
+
+  &__title {
+
+    &_buy-online {
+      margin 0
+      font-size 11px
+      color #313140
+    }
+  }
+
+  &__field {
+
+    &_buy-online {
+
+      &::after {
+        content ''
+      }
+    }
+  }
+
+  &__calendar {
+    &_buy-online {
+      left 0 !important
+      width 240px
+    }
+  }
+}
+
+.uikit-checkbox {
+
+  &_buy-online {
+    margin-top 16px
+    font-size 14px
+    line-height 1.5
+  }
+
+
+  &__label {
+    &_buy-online&_agreement-label {
+      display flex
+      align-items center
+      padding-left 40px
+      min-height 24px
+
+      &::before {
+        width 24px
+        height 24px
+        border 1px solid #f0f0f8
+        border-radius 4px
+      }
+
+      &::after {
+        top 5px
+        left 7px
+        width 10px
+        height 10px
+        font-size 14px
+        color #2db29f
+        border-color #2db29f
+      }
+    }
+  }
+
+  &__input {
+
+    &_buy-online {
+      position absolute
+      display block
+      clip rect(0, 0, 0, 0)
+
+      &:focus {
+
+        & + .uikit-checkbox__label::before {
+          border 2px solid rgba(0,123,188,.4)
+        }
+      }
+    }
+  }
+
+  &__label {
+
+    &_buy-online {
+      padding-top 2px
+    }
+
+    &_buy-online&_agreement-label {
+      font-size 12px
+      padding-top 0
+
+      & a,
+      & span.buy-online__link {
+        color #0078be
+        text-decoration underline
+      }
+    }
+
+    &_buy-online&_checked {
+
+      &::after {
+        transform scale(.7, .7)
+      }
+    }
+  }
+}
+
+.uikit-radio-list {
+  &__item {
+    &_prepayment-schema {
+      &:not(:first-child) {
+        margin-top 14px
+      }
+    }
+  }
+}
+
+.uikit-radio {
+  &__label {
+    &_prepayment-schema {
+      padding 3px 0 0 28px
+      font-size 14px
+
+      &::before {
+        width 22px
+        height 22px
+        border 2px solid #0078be
+      }
+    }
+
+    &_checked&_prepayment-schema {
+      &::after {
+        top 8px
+        left 7px
+        width 10px
+        height 10px
+        transition transform .2s
+      }
+    }
+  }
+}
+
+
+@media all and (min-width: 900px) {
+  .uikit-text {
+
+    &_buy-online {
+      &::after {
+        top 32px
+      }
+    }
+
+    &__title {
+      &_buy-online {
+        margin 3px 0
+        font-size 12px
+      }
+    }
+  }
+
+  .uikit-datepicker {
+    &_buy-online {
+      flex-grow 0
+      max-width 240px !important
+    }
+
+    &__title {
+      &_buy-online {
+        margin 3px 0
+        font-size 12px
+      }
+    }
+
+    &__calendar {
+      &_buy-online {
+        left auto !important
+      }
+    }
+  }
+
+  .uikit-checkbox {
+    &__label {
+      &_buy-online&_agreement-label {
+        display inline-block
+      }
+    }
+
+    &_buy-online&_agreement-label {
+      font-size 14px
+
+      & a,
+      & span.buy-online__link {
+        position relative
+        text-decoration none
+
+        &::after {
+          content ''
+          position absolute
+          left 0
+          right 0
+          bottom -1px
+          height 1px
+          background-color #0078be
+          opacity .25
+        }
+      }
+    }
+  }
+}

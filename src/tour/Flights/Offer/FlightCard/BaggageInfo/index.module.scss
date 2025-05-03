@@ -1,0 +1,72 @@
+@import "../../../../../theme/mixins.scss";
+
+.container {
+  @media ($tablet-screen) {
+    right: 0;
+  }
+}
+
+.title {
+  @include font-button-S;
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+}
+
+.caption {
+  margin-left: 8px;
+}
+
+.baggageIcon {
+  margin-right: 2px;
+}
+
+.airlineName {
+  @include font-button-S;
+  color: $color-text-accent-dark;
+}
+
+.baggageDescriptionTitle {
+  @include font-button-S;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 4px;
+}
+
+.baggageDescription {
+  margin-bottom: 8px;
+}
+
+.baggageDescriptionText {
+  @include resetStyle();
+  @include font-text-XS;
+}
+
+.divider {
+  @include font-button-S;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 16px 0;
+  color: $color-text-accent-dark;
+}
+
+.detailTitle {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 8px;
+}
+
+.detailTitleIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75px;
+  margin-right: 8px;
+  color: $color-text-note-dark;
+}

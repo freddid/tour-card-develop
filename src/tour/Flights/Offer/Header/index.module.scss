@@ -1,0 +1,43 @@
+@import '../../../../theme/theme.scss';
+@import '../../../../theme/mixins.scss';
+@import '../../../../theme/animation.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.containerMobile {
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    & .listTitle {
+      margin-bottom: 0;
+    }
+  }
+
+  & .listTitle {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: $font-size-S;
+    font-weight: 700;
+    line-height: 1.33;
+  }
+
+  & .filterButton {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    color: $color-text-dark;
+    border: none;
+    border-radius: $border-radius-btn;
+    background: $color-brand-white;
+    box-shadow: $shadow-component-container;
+    transition: all 0.2s ease-in-out;
+    @include font-text-XS();
+
+    &:hover {
+      background-color: $color-brand-paleOrange;
+    }
+  }
+}

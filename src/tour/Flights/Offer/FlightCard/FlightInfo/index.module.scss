@@ -1,0 +1,96 @@
+@import "../../../../../theme/mixins.scss";
+@import "../../../../../theme/theme.scss";
+
+.flightContainer {
+  top: 0;
+  right: unset;
+  left: 50%;
+  box-sizing: border-box;
+  transform: translateX(-50%);
+}
+
+.flightItem {
+  display: flex;
+  flex-direction: column;
+
+  & .flightInfoContainer {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr; 
+    grid-template-rows: 1fr;
+  }
+
+  .time {
+    @include font-subtitle-XS;
+    margin-bottom: 3px;
+  }
+
+  .timeDivider {
+    @include font-subtitle-XS;
+  }
+
+  .diffTime {
+    @include font-button-S;
+    margin-bottom: 8px;
+  }
+
+  .date {
+    @include font-text-XS;
+    margin-bottom: 4px;
+  }
+
+  .changeAirportInfo {
+    @include font-button-S;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin: 0 0 4px 0;
+    
+    & span {
+      margin-right: 3px;
+    }
+  }
+
+  .changeAirportName {
+    @include font-text-XS;
+  }
+
+  .flightInfo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
+
+  .transferBtn {
+    @include font-text-XS();
+    position: absolute;
+    z-index: 0;
+    top: 6px;
+    left: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    padding: 2px 8px;
+    cursor: default;
+    background: transparent;
+    white-space: nowrap;
+    color: $color-text-accent-dark;
+  }
+  
+  .caption {
+    padding: 0 0 0 4px;
+  }
+  
+  .iconAirplane {
+    &.returnWay {
+      transform: rotate(180deg);
+    }
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 12px;
+    background-color: $color-brand-blue-pale;
+  }
+}

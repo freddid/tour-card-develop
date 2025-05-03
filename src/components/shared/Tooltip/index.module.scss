@@ -1,0 +1,41 @@
+@import "../../../theme/theme.scss";
+@import "../../../theme/mixins.scss";
+@import "../../../theme/animation.scss";
+
+.container {
+  position: relative;
+  width: max-content;
+}
+
+.tooltip {
+  @include font-text-XS;
+  position: absolute;
+  z-index: $overlay-z-index;
+  left: 50%;
+  display: block;
+  max-width: max-content;
+  margin: 0;
+  padding: 8px 12px;
+  white-space: nowrap;
+  color: $color-text-light;
+  border-radius: $border-radius-main;
+  background: $color-bg-tooltip-dark;
+  animation: fade 0.2s forwards;
+  backdrop-filter: blur(4px);
+  transform: translateX(-50%);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    border: 7px solid transparent;
+    border-bottom: 9px solid $color-bg-tooltip-dark;
+    transform: scale(0.8) translateX(-50%);
+  }
+  
+  @media ($mobile-sm-screen) {
+    width: 35vw;
+    white-space: normal;
+  }
+}

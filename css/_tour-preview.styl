@@ -1,0 +1,57 @@
+.tour-preview {
+
+  &__link {
+    display block
+    position relative
+    text-decoration none
+    line-height .5
+
+    img {
+      width 100%
+      height auto
+    }
+
+    &:hover {
+      cursor pointer
+    }
+
+    &:hover span {
+      border-bottom-color transparent
+    }
+  }
+
+  &__count-image {
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    background-image linear-gradient(to top, rgba(0,0,0,.7) 0%, rgba(0,0,0,0) 100%)
+    text-align center
+    padding .76em 0 .61em
+    line-height 1.4
+
+    span {
+      border-bottom 1px dotted
+      color #fff
+      font-size .85em
+      font-weight 600
+      text-transform uppercase
+      position relative
+      margin-left 2em
+      display inline-block
+      TransitionHover()
+
+      &:before {
+        content ''
+        background-image url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8Zz4KICA8dGl0bGU+TGF5ZXIgMTwvdGl0bGU+CiAgPHBhdGggaWQ9IkZvcm1hXzEiIGNsYXNzPSJjbHMtMSIgZD0ibTE3LjMwNiwzLjE4NGEyLjI4NiwyLjI4NiAwIDAgMCAtMS43LC0wLjcyMmwtMi4xLDBsLTAuNDc4LC0xLjMwN2ExLjc3LDEuNzcgMCAwIDAgLTAuNjUzLC0wLjgxMmExLjY0MSwxLjY0MSAwIDAgMCAtMC45NzUsLTAuMzQzbC00LjgsMGExLjY0NCwxLjY0NCAwIDAgMCAtMC45NzEsMC4zNDJhMS43NzQsMS43NzQgMCAwIDAgLTAuNjUyLDAuODEybC0wLjQ3OSwxLjMwN2wtMi4xLDBhMi4yODYsMi4yODYgMCAwIDAgLTEuNywwLjcyMmEyLjQsMi40IDAgMCAwIC0wLjcsMS43NGwwLDguNjE0YTIuNCwyLjQgMCAwIDAgMC43LDEuNzRhMi4yODksMi4yODkgMCAwIDAgMS43LDAuNzIxbDEzLjIxNSwwYTIuMjg4LDIuMjg4IDAgMCAwIDEuNywtMC43MjFhMi40LDIuNCAwIDAgMCAwLjcsLTEuNzRsMCwtOC42MTRhMi40LDIuNCAwIDAgMCAtMC43MDcsLTEuNzM5em0tNS4zMzUsOS4wODlhNC4xMjEsNC4xMjEgMCAwIDEgLTUuOTQyLDBhNC4zNjgsNC4zNjggMCAwIDEgMCwtNi4wODVhNC4xMjQsNC4xMjQgMCAwIDEgNS45NDIsMGE0LjM2OCw0LjM2OCAwIDAgMSAwLDYuMDg1em0tMi45NzEsLTUuODExYTIuNTc1LDIuNTc1IDAgMCAwIC0xLjkxLDAuODEyYTIuODEsMi44MSAwIDAgMCAwLDMuOTEzYTIuNjUyLDIuNjUyIDAgMCAwIDMuODIsMGEyLjgxLDIuODEgMCAwIDAgMCwtMy45MTNhMi41NzUsMi41NzUgMCAwIDAgLTEuOTEsLTAuODEyeiIgZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjZmZmIi8+CiA8L2c+Cjwvc3ZnPg==')
+        background-position left center
+        background-repeat no-repeat
+        width 1.8em
+        height 1.6em
+        display inline-block
+        position absolute
+        left -2em
+      }
+    }
+  }
+}

@@ -1,0 +1,306 @@
+.tour-page-flights-wrapper {
+  display flex
+  flex-direction column
+  width 100%
+  padding-right 10%
+
+  .tour-page-flight {
+    display flex
+    padding 20px
+    height calc(102px - 40px)
+
+    &__info {
+      display flex
+      flex-direction column
+      width 20%
+
+      &_left-side {
+        padding-right 10px
+        align-items flex-start
+      }
+
+      &_right-side {
+        padding-left 10px
+        align-items flex-end
+      }
+
+      &__time {
+        font-size 30px
+        font-weight 600
+
+        &_disabled {
+          color #999
+        }
+      }
+
+      &__caption {
+        font-size 13px
+        word-break break-word
+        color #999
+
+        &_right-side {
+          text-align right
+        }
+      }
+    }
+
+    &__content {
+      display flex
+      flex 1 1
+      flex-direction column
+      padding 8px
+
+      &__tip {
+        display flex
+        align-items center
+        justify-content center
+
+        &_orange {
+          color #f37321
+        }
+
+        &__mini-loader {
+          InlineVerticalBox(middle)
+          position relative
+          left -5px
+          font-size 2px
+          width 20px
+          height 20px
+          text-indent -9999em
+          border-style solid
+          border-width 4px
+          border-color #cacad9
+          border-radius 50%
+          border-left-color #007bbc
+          transform translateZ(0)
+          animation tp-animation-mini-loader 1s infinite linear
+        }
+      }
+
+      &__route {
+        display flex
+        flex 1 1
+        margin-top 8px
+
+        &__wrap {
+          height 36.5px
+          display flex
+          width 100%
+        }
+
+        &__container {
+          width 100%
+          justify-content center
+          display flex
+          flex-direction column
+          align-items center
+        }
+
+        &__point {
+          position relative
+          box-sizing border-box
+          height 11px
+          width 11 px
+          border 1px solid #fc0
+          border-radius 50%
+          z-index 1
+
+          &_active {
+            border-color #3bc1ea
+
+            &:after {
+              content ''
+              position absolute
+              display block
+              top 2px
+              right 2px
+              bottom 2px
+              left 2px
+              background-color #3bc1ea
+              border-radius 50%
+              z-index 100
+            }
+          }
+
+          &:hover {
+            border-color #3bc1ea
+
+            &:after {
+              content ''
+              position absolute
+              display block
+              top 2px
+              right 2px
+              bottom 2px
+              left 2px
+              background-color #3bc1ea
+              border-radius 50%
+              z-index 100
+            }
+
+            & .tour-page-flight__tooltip {
+              visibility visible
+              opacity 1
+              z-index 3
+            }
+          }
+
+          &:after {
+            content ''
+            position absolute
+            display block
+            top 2px
+            right 2px
+            bottom 2px
+            left 2px
+            background-color #fc0
+            border-radius 50%
+            z-index 100
+          }
+
+
+          &__caption {
+            position absolute
+            top 0
+            left 50%
+            padding-top 20px
+            transform translateX(-50%)
+            font-size 11px
+            font-weight 700
+            text-transform uppercase
+            overflow hidden
+            text-overflow ellipsis
+            white-space nowrap
+            max-width 65px
+          }
+
+          &:first-child {
+            & .tour-page-flight__content__route__point__caption {
+              left 0
+              transform translateX(0)
+            }
+          }
+
+          &:last-child {
+            & .tour-page-flight__content__route__point__caption {
+              left auto
+              right 0
+              transform translateX(0)
+              text-align right
+            }
+          }
+
+        }
+
+        &__line {
+          position relative
+          display flex
+          align-items center
+          justify-content center
+          flex 1 1
+          color #999
+          height 11px
+
+          &:after {
+            content ''
+            position absolute
+            top 5px
+            left 0
+            height 1px
+            width 100%
+            background-color #999
+          }
+
+          & > svg {
+            background-color #fff
+            z-index 1
+          }
+        }
+      }
+    }
+
+    &__tooltip {
+      visibility hidden
+      position absolute
+      width 190px
+      bottom 100%
+      left 50%
+      margin-left -95px
+      margin-bottom 14px
+      opacity 0
+      border-radius 2px
+      background-color alpha(#313140, 0.9)
+      color #ffffff
+      font-size 11px
+      line-height 15px
+      transition all .15s ease-in-out
+      z-index 10
+
+      &:after {
+        position absolute
+        top 100%
+        left 0
+        height 14px
+        width 100%
+      }
+
+      &:before {
+        content ""
+        position absolute
+        height 0
+        width 0
+        top 100%
+        left 50%
+        margin-left -8px
+        border solid transparent
+        pointer-events none
+        border-top-color alpha(#313140, 0.9)
+        border-width 8px
+      }
+
+      &-logo {
+        box-sizing border-box
+        display flex
+        width 100%
+        height 45px
+        justify-content center
+        align-items center
+        border 1px solid rgba(231, 231, 231, 0.9)
+        background-color #EDEDEE
+
+        &-image {
+          display block
+          max-width 100%
+          max-height 100%
+        }
+      }
+
+      &-content {
+        padding 14px
+      }
+
+      &_hidden {
+        visibility hidden !important
+      }
+    }
+
+    &:not(:first-child) {
+      border-top 1px dashed #999
+    }
+  }
+
+  &__notification {
+    color #606060
+    font-size 12px
+    text-align center
+  }
+}
+
+@keyframes tp-animation-mini-loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

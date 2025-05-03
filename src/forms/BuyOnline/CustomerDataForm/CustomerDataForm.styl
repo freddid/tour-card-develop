@@ -1,0 +1,102 @@
+.customer-data-form {
+  &__title {
+    margin 0
+    font-size 18px
+  }
+
+  &__subtitle {
+    margin 4px 0 0
+    font-size 12px
+  }
+
+  &__row {
+    &_name-row {
+      margin-top 30px
+    }
+  }
+
+  &__checkboxPatronymic {
+    padding-left 0.25rem
+    display flex
+  }
+  
+  &__tooltip {
+    font-size 12px
+
+    &_error {
+      color #eb001b
+    }
+
+    &_warning {
+      color #5c5c5c
+    }
+
+    &_action {
+      position relative
+      color #0078be
+      white-space nowrap
+      cursor pointer
+      border-bottom: 1px dashed rgba(0, 120, 190, .25)
+
+      &:hover {
+        color  #00c3ff
+        border-bottom: 1px dashed rgba(0, 195, 255, .25);
+      }
+    }
+  }
+
+
+  &__tooltip-box {
+    margin-bottom 10px
+    font-size 12px
+    color #606060
+  }
+}
+
+
+@media all and (min-width: 900px) {
+  .customer-data-form {
+    margin 0 0 10px
+
+    &__title-wrap {
+      display flex
+      align-items flex-start
+    }
+
+    &__title {
+      font-size 22px
+    }
+
+    &__subtitle {
+      margin 14px 0 0
+    }
+
+    &__row {
+      display flex
+
+      &_name-row {
+        margin-top 6px
+      }
+    }
+
+    &__input {
+      flex-grow 1
+      width 100%
+
+      &_surname, &_firstname {
+        margin-right: 10px
+      }
+
+      &_phone-input, &_passport-input {
+        margin-right 20px
+      }
+    }
+
+    &__tooltip-box {
+      position relative
+      bottom 9px
+      margin 0
+      overflow hidden
+    }
+  }
+}

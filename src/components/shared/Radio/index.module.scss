@@ -1,0 +1,47 @@
+@import '../../../theme/theme.scss';
+
+.container {
+  & .label {
+    position: relative;
+    padding-left: 24px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    color: $color-text-dark;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 14px;
+      height: 14px;
+      content: "";
+      border: 1px solid $color-text-note;
+      border-radius: 50%;
+    }
+  }
+
+  & input {
+    display: none;
+
+    // Активный radio
+    &:checked + .label::before {
+      border: 2px solid $color-brand-blue;
+    }
+
+    &:checked + .label::after {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      display: block;
+      width: 8px;
+      height: 8px;
+      content: "";
+      border-radius: 50%;
+      background-color: $color-brand-blue;
+    }
+  }
+}

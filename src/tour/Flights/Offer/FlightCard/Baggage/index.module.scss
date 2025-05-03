@@ -1,0 +1,66 @@
+@import "../../../../../theme/theme.scss";
+@import "../../../../../theme/mixins.scss";
+
+.container {
+  position: relative;
+  margin: 4px 0 0;
+  
+  @media ($mobile-screen) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.baggagePlaces {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 0 4px 0;
+  
+  @media ($mobile-screen) {
+    margin: 0 8px 0 0;
+  }
+}
+
+.captionBtn {
+  @include buttonStyleReset;
+  @include font-text-XS;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 4px 8px;
+  text-align: left;
+  color: $color-text-accent-dark;
+  border-radius: $border-radius-btn;
+  
+  &.captionBtnNoConcrete {
+    color: $color-icon-secondary;
+    cursor: default;
+  }
+  
+  &:not(.captionBtnNoConcrete):hover {
+    color: $color-text-dark;
+    background: $color-bg-paleYellow;
+  }
+  
+  @media ($mobile-screen) {
+    font-size: 9px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 12px;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
+    text-transform: uppercase;
+    border-radius: $border-radius-secondary;
+    background: $color-bg-note;
+  
+    &.captionBtnNoConcrete {
+      display: none;
+    }
+  
+    &:not(.captionBtnNoConcrete):hover {
+      color: $color-text-accent-dark;
+      background: $color-bg-note;
+    }
+  }
+}

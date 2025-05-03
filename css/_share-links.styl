@@ -1,0 +1,71 @@
+.share-links {
+  background: rgba(250, 250, 250, 0.9);
+  border: 1px solid #888;
+  border-radius: 2px;
+  position: absolute;
+  list-style-type: none;
+  top: -26px;
+  left: 6px;
+  margin: 0;
+  padding: 0;
+
+
+  &__item {
+    color: #1d99dc;
+    cursor: pointer;
+    float: left;
+    list-style-type: none;
+    margin: 2px;
+    position: relative;
+    width: 28px;
+    height: 28px;
+  }
+
+  &__item.vk-share-link {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAKCAQAAAD8gK0UAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsSAAALEgHS3X78AAAAAmJLR0QAAKqNIzIAAACwSURBVBgZBcAxKgUAAIDh/2EzorAw2AwcwSQbis1iUDbvEEYWNuegLMSilGzKoETJxMKoPmXP0NBOlV33Xj27NF5l0YGhod08AdbKmDvAcpUHwHs2AI9GyglgoWwBWM/AHWC/nALmTfgAHFVlyR/4teIWsO0GcG60qnIIAADgz2RVVcbcAgAAODSoqsqUFwDw6QvAmdGqqsy4AsCqOS8AjquqKgObLnzjx3SZdQ14+wdtGxJtXSh2zgAAAABJRU5ErkJggg==") center no-repeat #547697;
+  }
+
+  &__item.ok-share-link {
+    overflow: hidden;
+  }
+
+  &__item #ok-share-button {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+  }
+
+  &__item.twitter-share-link {
+    overflow: hidden;
+  }
+
+  &__item #twitter-share-button {
+    position: absolute;
+    left: -3px;
+    top: 0;
+  }
+
+  &__item.whatsapp-share-link {
+    overflow: hidden;
+  }
+
+  &__item #whatsapp-share-button {
+    position: absolute;
+    left: -3px;
+    top: 0;
+  }
+
+  &__item.full-share-link {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAMAAABFNRROAAAAV1BMVEVMaXH///////////////////////////////////////////////////////////////////////////////////////////////////////////////+/qbsBAAAAHHRSTlMA9/rQLFzzS2LmQsUR3QsoM3jhnOmM1k3HIiDXMx3A6AAAAG5JREFUeF41zEcWAyEMA1AZjD2G6TXF9z9nHjyilf5CQo9GiumPwamId+bJGB+5G0bNM4BXqEjivq9gim1zblc4FnOtMFYomw+Aui1HuLazApEY6+4u7T4UAHN+xgrc8gbblBuQXArVTec3RO39B69aBNQejdhBAAAAAElFTkSuQmCC") center no-repeat #93d10e;
+  }
+
+  &-wrapper {
+    position: relative;
+    width: 170px;
+  }
+
+  .hidden,
+  &-wrapper.hidden iframe {
+    visibility: hidden !important;
+  }
+}

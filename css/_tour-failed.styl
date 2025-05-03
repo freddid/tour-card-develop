@@ -1,0 +1,59 @@
+.tour-failed {
+
+  &__tooltip {
+    position absolute
+    top 0
+    right 0
+    bottom 0
+    left 0
+    background-color rgba(255,255,255,.95)
+    border-radius 4px
+    z-index 12
+  }
+
+  &__tooltip-wrapper {
+    max-width 290px
+    margin 120px auto 0
+    text-align center
+  }
+
+  &__tooltip-icon {
+    color #bdbbbc
+    fill #bdbbbc
+    width 160px
+    height 160px
+    display inline-block
+    line-height 0
+  }
+
+  &__title {
+    font-size 1.85em
+    font-weight 700
+    padding 0
+    margin .2em 0 1em
+  }
+
+  &__text {
+    font-size 1.15em
+    padding 0
+    margin 0 0 2.2em
+  }
+
+  &__line {
+    display flex
+    background-color #ff0d3b
+    color #fff
+    margin-left -($cardPadding)
+    margin-right -($cardPadding)
+    padding 10px $cardPadding
+    border-top-left-radius 4px
+    border-top-right-radius 4px
+  }
+
+  &__line-text {
+    font-size 1.15em
+    padding 0
+    margin 0
+    flex 1 1 0%
+  }
+}

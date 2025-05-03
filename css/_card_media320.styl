@@ -1,0 +1,39 @@
+@media all and (max-width: 479px) {
+  .card {
+    padding 4px 0
+
+    &__controls {
+      padding 0 $cardPaddingMedia320
+    }
+
+    &__wrapper{
+      padding 0 $cardPaddingMedia320
+    }
+
+    &__tour-price {
+      float none
+      width auto
+      margin-top 0
+      margin-bottom 0
+      margin-left -($cardPaddingMedia320)
+      margin-right -($cardPaddingMedia320)
+      padding-top 30px
+      padding-bottom 1px
+
+      &-wrapper {
+        max-width 240px
+        margin auto
+        padding 0
+      }
+    }
+
+    &__hotel-forms {
+
+      & > div:not([class*='uikit-tabs']) {
+        padding $cardPaddingMedia320
+        margin-left -($cardPaddingMedia320)
+        margin-right -($cardPaddingMedia320)
+      }
+    }
+  }
+}

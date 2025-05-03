@@ -1,0 +1,28 @@
+@media all and (min-width: 480px) and (max-width: 759px) {
+  .tour-parameters {
+    display block
+
+    &__item {
+      display flex
+      width fit-content
+      padding 0
+    }
+
+    &__name {
+      display block
+      width auto
+      padding 0
+      margin-right 5px
+      overflow unset
+      
+      .tour-parameters:not([class*='_view-block']) &:after {
+        display none
+      }
+    }
+
+    &__value {
+      display block
+      padding 0
+    }
+  }
+}

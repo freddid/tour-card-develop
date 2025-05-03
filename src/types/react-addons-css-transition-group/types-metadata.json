@@ -1,0 +1,29 @@
+{
+    "name": "react-addons-css-transition-group",
+    "libraryName": "React (react-addons-css-transition-group)",
+    "sourceRepoURL": "https://www.github.com/DefinitelyTyped/DefinitelyTyped",
+    "data": {
+        "authors": "Asana <https://asana.com>, AssureSign <http://www.assuresign.com>, Microsoft <https://microsoft.com>",
+        "dependencies": {
+            "react-addons-transition-group": "*",
+            "react": "*"
+        },
+        "libraryMajorVersion": 15,
+        "libraryMinorVersion": 0,
+        "typeScriptVersion": "2.0",
+        "libraryName": "React (react-addons-css-transition-group)",
+        "typingsPackageName": "react-addons-css-transition-group",
+        "projectName": "http://facebook.github.io/react/",
+        "sourceRepoURL": "https://www.github.com/DefinitelyTyped/DefinitelyTyped",
+        "globals": [],
+        "declaredModules": [
+            "react-addons-css-transition-group/."
+        ],
+        "files": [
+            "index.d.ts"
+        ],
+        "hasPackageJson": false,
+        "contentHash": "77b0c17cc2e3f6487060750c38652962b534cd682330c378954123d12b5e5b6e"
+    },
+    "isLatest": true
+}

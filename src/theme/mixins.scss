@@ -1,0 +1,177 @@
+@import './theme.scss';
+
+// Helpers
+
+@mixin resetStyle() {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+@mixin buttonStyleReset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+// Typography
+
+/// sizes
+$font-size-XXL: 40px;
+$font-size-XL: 32px;
+$font-size-L: 20px;
+$font-size-base: 16px; // base font-size from mui, we are using this default value
+$font-size-M: 14px;
+$font-size-S: 12px;
+$font-size-XS: 10px;
+$font-size-XXS: 8px;
+
+/*title*/
+@mixin font-title-L-caps() {
+  font-size: $font-size-XXL;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+@mixin font-title-S-caps() {
+  font-size: $font-size-L;
+  line-height: 1.2;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+@mixin font-title-M() {
+  font-size: $font-size-XL;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+@mixin font-title-S() {
+  font-size: $font-size-L;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+@mixin font-title-XS() {
+  font-size: $font-size-base;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+@mixin font-title-XXS() {
+  font-size: $font-size-M;
+  line-height: 1.14;
+  font-weight: 700;
+}
+
+/*subtitle*/
+@mixin font-subtitle-M() {
+  font-size: $font-size-XL;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+@mixin font-subtitle-S() {
+  font-size: $font-size-L;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+@mixin font-subtitle-XS() {
+  font-size: $font-size-base;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+@mixin font-subtitle-XXS() {
+  font-size: $font-size-M;
+  line-height: 1.14;
+  font-weight: 600;
+}
+
+/*text*/
+@mixin font-text-M() {
+  font-size: $font-size-base;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+@mixin font-text-S() {
+  font-size: $font-size-M;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+@mixin font-text-XS() {
+  font-size: $font-size-S;
+  line-height: 1.33;
+  font-weight: 400;
+}
+
+/*button*/
+@mixin font-button-M() {
+  font-size: $font-size-base;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+@mixin font-button-S() {
+  font-size: $font-size-S;
+  line-height: 1.33;
+  font-weight: 700;
+}
+
+@mixin font-button-XS() {
+  font-size: $font-size-XS;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+/*caption*/
+@mixin font-caption-M() {
+  font-size: $font-size-M;
+  line-height: 1.14;
+  font-weight: 400;
+}
+
+@mixin font-caption-M-caps() {
+  font-size: $font-size-S;
+  line-height: 1.33;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+}
+
+@mixin font-caption-S() {
+  font-size: $font-size-XS;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+@mixin font-caption-XS() {
+  font-size: $font-size-XXS;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+@mixin scroll {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #e3e3e3;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    width: 5px;
+    height: 29px;
+    background: #b4bcc3;
+    border-radius: 10px;
+  }
+}

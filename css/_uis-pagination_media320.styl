@@ -1,0 +1,48 @@
+@media all and (max-width: 479px) {
+  .uis-pagination {
+
+    &__item {
+
+      &_prev span {
+        text-indent -1000px
+        position relative
+        overflow hidden
+        width 30px
+        text-align left
+        display inline-block
+
+        &:before {
+          content '\e604'
+          font-family module5-icon
+          width 30px
+          display inline-block
+          position absolute
+          top 2px
+          right 0
+          text-indent 0
+        }
+      }
+
+      &_next span {
+        text-indent -1000px
+        position relative
+        overflow hidden
+        width 30px
+        text-align left
+        display inline-block
+
+        &:before {
+          content '\e62b'
+          font-family module5-icon
+          width 30px
+          display inline-block
+          position absolute
+          top 2px
+          left 0
+          text-indent 0
+          text-align right
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.general-form {
+  font-size 13px
+
+  &__table {
+    align-items flex-end
+  }
+
+  &__table-cell {
+
+      &_width-full {
+        flex-basis 100%
+      }
+    }
+
+
+  &__controls {
+    display block
+  }
+
+  &__field-group {
+    border 1px solid #dadae5
+    padding 10px 16px 20px
+    margin 0 0 20px
+  }
+
+  &__field-group-title {
+    font-size 1.3em
+    font-weight 700
+    margin 0
+  }
+
+  &__field-group-subtitle {
+    color #999
+    font-weight 500
+    display block
+    margin 0
+  }
+
+  &__buttons {
+
+    &_with-offer {
+      align-items center
+    }
+  }
+
+  &__button-send {
+    if !(franchise is defined) {
+      text-decoration none
+      border 0
+      text-transform uppercase
+      color button-color
+      font-weight 600
+      font-size 1em
+      font-family inherit
+      line-height 3.08em
+      height 3.08em
+      background-color button-bg
+      border-radius .3em
+      box-shadow none
+      display block
+      margin-bottom .8em
+      margin-top .8em
+      padding 0 .4em
+      box-sizing border-box
+      max-width 15.4em
+      width 100%
+      text-align center
+      TransitionHover()
+
+      &:visited {
+        background-color alpha(@background-color, 80%)
+        padding 0 .4em !important
+        box-shadow none
+        line-height 3.08em !important
+        top 0 !important
+      }
+
+      &:hover {
+        background-color alpha(@background-color, 80%)
+        padding 0 .4em !important
+        box-shadow none
+        line-height 3.08em !important
+        top 0 !important
+      }
+
+      &:active {
+        background-color alpha(@background-color, 90%)
+        padding 0 .4em !important
+        box-shadow none
+        line-height 3.08em !important
+        top 0 !important
+      }
+    }
+  }
+}

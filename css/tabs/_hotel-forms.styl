@@ -1,0 +1,89 @@
+.uikit-tabs {
+
+  &_hotel-forms {
+    margin-left -($cardPadding)
+    margin-right -($cardPadding)
+  }
+
+  &__header {
+
+    &_hotel-forms {
+      padding .4em $cardPadding 0
+      background-color #dedee9
+    }
+  }
+
+  &__button {
+
+    &_hotel-forms {
+
+      &:not([class*='active']) {
+        color link-color
+      }
+
+      &[class*='active'] {
+        background-color #f3f3ff
+      }
+    }
+  }
+
+  &__content {
+
+    &_hotel-forms {
+      padding $cardPadding
+      background-color #f3f3ff
+    }
+
+
+    &_hotel-forms-online {
+      padding 0
+      background-color #ffffff
+    }
+  }
+}
+
+@media all and (max-width: 479px) {
+  .uikit-tabs {
+    &_hotel-forms {
+      margin-left -($cardPaddingMedia320)
+      margin-right -($cardPaddingMedia320)
+    }
+
+    &__header {
+
+      &_hotel-forms {
+        padding .4em $cardPaddingMedia320 0
+      }
+    }
+
+    &__content {
+
+      &_hotel-forms {
+        padding $cardPaddingMedia320
+      }
+    }
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 759px) {
+  .uikit-tabs {
+    &_hotel-forms {
+      margin-left -($cardPaddingMedia480)
+      margin-right -($cardPaddingMedia480)
+    }
+
+    &__header {
+
+      &_hotel-forms {
+        padding .4em $cardPaddingMedia480 0
+      }
+    }
+
+    &__content {
+
+      &_hotel-forms {
+        padding $cardPaddingMedia480
+      }
+    }
+  }
+}

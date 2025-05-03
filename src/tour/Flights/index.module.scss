@@ -1,0 +1,26 @@
+@import "../../theme/theme.scss";
+@import "../../theme/mixins.scss";
+
+.flightsWrapper {
+  padding: 16px 12px;
+  background-color: #e0e0e2;
+  font-family: "Open Sans", sans-serif;
+  
+  @media ($mobile-sm-screen) {
+    padding: 12px 10px;
+    margin: 0 -10px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  font-family: inherit;
+}
+
+.title {
+ @include font-subtitle-XXS;
+ color: $color-text-accent-dark;
+ text-transform: uppercase;
+}

@@ -1,0 +1,51 @@
+@import '../../../../../../theme/theme.scss';
+@import '../../../../../../theme/mixins.scss';
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  
+  &:not(:last-child) {
+    margin: 0 2px 0 0;
+  }
+}
+
+.weightLabel {
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+  display: inline-block;
+  width: 18px;
+  font-size: 11px;
+  line-height: 110%;
+  text-align: center;
+  color: $color-text-light;
+  
+  &.hand {
+    bottom: 1px;
+  }
+}
+
+.cross {
+  position: relative;
+  
+  &::after, &::before {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 8px;
+    height: 1px;
+    border-radius: 2px;
+    background-color: $color-text-light;
+  }
+  
+  &::before {
+    transform: rotate(-45deg);
+  }
+  
+  &::after {
+    transform: rotate(45deg);
+  }
+}

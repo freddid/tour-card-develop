@@ -1,0 +1,31 @@
+@import '../../../theme/theme.scss';
+@import '../../../theme/mixins.scss';
+@import '../../../theme/animation.scss';
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1;
+  width: 100%;
+
+  & .listTitle {
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    font-size: $font-size-S;
+    line-height: 1.33;
+    font-weight: 700;
+  }
+
+  & .animation {
+    animation: fade 0.5s forwards;
+  }
+
+  & .collapseBtn {
+    margin-top: 10px;
+  }
+
+  & .list {
+    @include resetStyle();
+  }
+}

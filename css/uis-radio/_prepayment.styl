@@ -1,0 +1,32 @@
+.uis-radio {
+
+  &_prepayment {
+
+  }
+
+  &__label {
+    &_prepayment {
+      &:before {
+        content ''
+        border 1px solid #dbdbe6
+        box-sizing border-box
+        background-color #fff
+        border-radius 50%
+        width 16px
+        height 16px
+        top 4px
+      }
+      &:after {
+        content ''
+        background-color #000
+        width 8px
+        height 8px
+        border-radius 50%
+      }
+
+      &[class*="checked"]:after {
+        top 8px
+      }
+    }
+  }
+}

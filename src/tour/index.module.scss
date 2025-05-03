@@ -1,0 +1,43 @@
+@import "../theme/theme.scss";
+@import "../theme/mixins.scss";
+@import "../theme/animation.scss";
+
+.mainInfoWrapper {
+  min-height: 450px;
+}
+
+.excludeServiceIcon {
+  position: relative;
+  top: 4px;
+  display: inline-block;
+  margin-left: 4px;
+
+  &:hover {
+    &::after {
+      @include font-text-XS;
+      content: 'Услуги можно приобрести отдельно';
+      position: absolute;
+      top: calc(100% + 12px);
+      left: 50%;
+      width: 158px;
+      padding: 8px 12px;
+      opacity: 0.95;
+      color: $color-text-light;
+      border-radius: $border-radius-main;
+      background: $color-bg-tooltip-dark;
+      animation: fade 0.2s forwards;
+      backdrop-filter: blur(4px);
+      transform: translateX(-50%);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: calc(100% - 2px);
+      left: 50%;
+      border: 8px solid transparent;
+      border-bottom: 8px solid $color-bg-tooltip-dark;
+      transform: scale(0.8) translateX(-50%);
+    }
+  }
+}

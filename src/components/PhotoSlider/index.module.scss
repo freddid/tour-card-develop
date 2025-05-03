@@ -1,0 +1,60 @@
+@import "../../theme/theme.scss";
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliderContainer {
+  z-index: 0;
+}
+
+.sliderImg {
+  display: block;
+  margin: 0 auto;
+  border-radius: 2px 2px 0 0;
+}
+
+.noPhotos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 19px 0 18px;
+  color: $color-brand-darkViolet;
+}
+
+.desktopView.container {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+
+  & .prevSlideControl {
+    margin-left: 18px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & .nextSlideControl {
+    margin-right: 18px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & .noPhotos {
+    width: 390px;
+    padding: 0;
+    color: $color-brand-etherAmethyst;
+    background-color: $color-brand-moonSilver;
+  }
+
+  @media screen and (min-width: 576px) {
+    width: 390px;
+    height: 220px;
+  }
+}

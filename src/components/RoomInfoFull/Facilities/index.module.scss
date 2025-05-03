@@ -1,0 +1,25 @@
+@import "../../../theme/theme.scss";
+
+.facility_group {
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: $color-brand-blue;
+  }
+
+.facility {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $color-text-dark;
+    font-feature-settings: "clig" off, "liga" off;
+  }
+
+.facility_no_info {
+    margin-top: 0;
+    color: $color-text-note;
+  }

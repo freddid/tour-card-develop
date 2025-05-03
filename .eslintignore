@@ -1,0 +1,4 @@
+*.js
+gulptasks/
+src/config/
+src/SVGBundle.tsx

@@ -1,0 +1,69 @@
+{
+	"Comments":"Пути в разных конфигурациях",
+	"CLAIMS_PROTOCOL": {
+		"Comments": "Протокол для сервиса онлайн оплаты",
+		"Release": "https",
+		"Test": "https",
+		"Debug": "https"
+	},
+	"CLAIMS_HOST_NAME": {
+		"Comments": "Имя хоста для claims",
+		"Release": "claims.sletat.ru",
+		"Test": "claimsdebug.sletat.ru",
+		"Debug": "claimsdebug.sletat.ru"
+	},
+	"CLAIMS_AGENT_API_HOST_NAME": {
+		"Comments": "Имя хоста для claims agent api",
+		"Release": "api-claims-agent.sletat.ru",
+		"Test": "api-claims-agentdebug.sletat.ru",
+		"Debug": "api-claims-agentdebug.sletat.ru"
+	},
+	"MODULE_HOST_NAME": {
+		"Comments": "Имя хоста для module",
+		"Release": "module.sletat.ru",
+		"Test": "moduledebug.sletat.ru",
+		"Debug": "moduledebug.sletat.ru"
+	},
+	"UI_SLETAT_API_HOST_NAME": {
+		"Comments": "Имя хоста для ui.sletat.ru",
+		"Release": "ui.sletat.ru",
+		"Test": "uidev2.sletat.ru",
+		"Debug": "uidev2.sletat.ru"
+	},
+	"URL_SHORTENER_API_HOST_NAME": {
+		"Comments": "Имя хоста для tlink.su",
+		"Release": "tlink.su",
+		"Test": "tlink.su",
+		"Debug": "tlink.su"
+	},
+	"LEADHUB_HOST_NAME": {
+		"Comments": "Имя хоста для leadhub.sletat.ru",
+		"Release": "leadhub.sletat.ru",
+		"Test": "leadhubdebug.sletat.ru",
+		"Debug": "leadhubdebug.sletat.ru"
+	},
+	"API_SLETAT_HOST_NAME": {
+		"Comments": "Имя хоста для api.sletat.ru",
+		"Release": "api.sletat.ru",
+		"Test": "apidebug.sletat.ru",
+		"Debug": "apidebug.sletat.ru"
+	},
+	"API_CMS_HOST": {
+		"Comments": "Имя хоста для api-cms.sletat.ru",
+		"Release": "api-cms.sletat.ru",
+		"Test": "api-cms.sletat.ru",
+		"Debug": "api-cms.sletat.ru"
+	},
+	"HOTEL_HOST_PHOTO_STORAGE": {
+		"Comments": "Имя хоста для hotels-room.sletat.ru",
+		"Release": "hotels-room.sletat.ru",
+		"Test": "hotels-room-debug.sletat.ru",
+		"Debug": "hotels-room-debug.sletat.ru"
+	},
+	"LEADHUB_PROTOCOL": {
+    "Comments": "Протокол для сервиса leadhub.sletat.ru",
+    "Release": "https",
+    "Test": "https",
+    "Debug": "https"
+  }
+}

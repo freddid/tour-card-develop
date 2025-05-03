@@ -1,0 +1,49 @@
+{
+  "_from": "@types/react-addons-css-transition-group@15.0.0",
+  "_id": "@types/react-addons-css-transition-group@15.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-KQvK6tBxVk6mTh4lJCs2YW/2S8E=",
+  "_location": "/@types/react-addons-css-transition-group",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@types/react-addons-css-transition-group@15.0.0",
+    "name": "@types/react-addons-css-transition-group",
+    "escapedName": "@types%2freact-addons-css-transition-group",
+    "scope": "@types",
+    "rawSpec": "15.0.0",
+    "saveSpec": null,
+    "fetchSpec": "15.0.0"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "http://registry.jsteam.sletat.ru:4873/@types%2freact-addons-css-transition-group/-/react-addons-css-transition-group-15.0.0.tgz",
+  "_shasum": "290bcaead071564ea64e1e25242b36616ff64bc1",
+  "_spec": "@types/react-addons-css-transition-group@15.0.0",
+  "_where": "D:\\skv\\projects\\modules\\tour-card",
+  "author": {
+    "name": "Asana",
+    "email": "https://asana.com"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@types/react": "*",
+    "@types/react-addons-transition-group": "*"
+  },
+  "deprecated": false,
+  "description": "TypeScript definitions for React (react-addons-css-transition-group)",
+  "license": "MIT",
+  "main": "",
+  "name": "@types/react-addons-css-transition-group",
+  "peerDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+  },
+  "scripts": {},
+  "typeScriptVersion": "2.0",
+  "typesPublisherContentHash": "77b0c17cc2e3f6487060750c38652962b534cd682330c378954123d12b5e5b6e",
+  "version": "15.0.0"
+}

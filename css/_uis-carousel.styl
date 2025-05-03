@@ -1,0 +1,183 @@
+.uis-carousel {
+  position relative
+
+  &_thumbs {
+    position: absolute;
+    width: 256px;
+    bottom: 12px;
+    left: 80px;
+  }
+
+  &_thumbs&_card-module {
+    position static
+    text-align center
+    width auto
+    overflow hidden
+  }
+
+  img {
+    display block
+  }
+
+  &__prev-button {
+
+    &_card-module {
+      position absolute
+      top 50%
+      left 5px
+      z-index 2
+      margin-top -65px
+      cursor pointer
+      display inline-block
+      width 60px
+      height 120px
+      background-repeat no-repeat
+      background-position center
+      background-image url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIGhlaWdodD0iNjAiIHdpZHRoPSIzMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMxIDYwIj4gICAgPHBhdGggZmlsbD0iI2ZmZmZmZiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNIDI4LjY3IDYwLjAxIEMgMjguNjcgNjAuMDEgMi4xOSAzMS45NSAyLjE5IDMxLjk1IEMgMi4xOSAzMS45NSAwLjUgMzAuMTYgMC41IDMwLjE2IEMgMC41IDMwLjE2IDIuMTkgMjguMzcgMi4xOSAyOC4zNyBDIDIuMTkgMjguMzcgMjguNjcgMC4zIDI4LjY3IDAuMyBDIDI4LjY3IDAuMyAzMC4zNiAyLjA5IDMwLjM2IDIuMDkgQyAzMC4zNiAyLjA5IDMuODggMzAuMTYgMy44OCAzMC4xNiBDIDMuODggMzAuMTYgMzAuMzYgNTguMjIgMzAuMzYgNTguMjIgQyAzMC4zNiA1OC4yMiAyOC42NyA2MC4wMSAyOC42NyA2MC4wMSBaIiAvPjwvc3ZnPg==")
+      border-radius 5px
+      border 2px solid transparent
+      overflow hidden
+      color #fff
+      text-indent -1000px
+
+      &:hover {
+        border-color currentColor
+      }
+    }
+  }
+
+  &__next-button {
+
+    &_card-module {
+      position absolute
+      top 50%
+      right 5px
+      z-index 2
+      margin-top -65px
+      cursor pointer
+      display inline-block
+      width 60px
+      height 120px
+      background-repeat no-repeat
+      background-position center
+      background-image url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIGhlaWdodD0iNjAiIHdpZHRoPSIzMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMxIDYwIj4gICAgPHBhdGggZmlsbD0iI2ZmZmZmZiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNIDIuMzMgNjAuMDEgQyAyLjMzIDYwLjAxIDI4LjgxIDMxLjk1IDI4LjgxIDMxLjk1IEMgMjguODEgMzEuOTUgMzAuNTEgMzAuMTYgMzAuNTEgMzAuMTYgQyAzMC41MSAzMC4xNiAyOC44MSAyOC4zNyAyOC44MSAyOC4zNyBDIDI4LjgxIDI4LjM3IDIuMzMgMC4zIDIuMzMgMC4zIEMgMi4zMyAwLjMgMC42NCAyLjA5IDAuNjQgMi4wOSBDIDAuNjQgMi4wOSAyNy4xMiAzMC4xNiAyNy4xMiAzMC4xNiBDIDI3LjEyIDMwLjE2IDAuNjQgNTguMjIgMC42NCA1OC4yMiBDIDAuNjQgNTguMjIgMi4zMyA2MC4wMSAyLjMzIDYwLjAxIFoiIC8+PC9zdmc+")
+      border-radius 5px
+      border 2px solid transparent
+      overflow hidden
+      color #fff
+      text-indent -1000px
+
+      &:hover {
+        border-color currentColor
+      }
+    }
+
+    //&_card-module {
+    //  right 5px
+    //  top 50%
+    //  background-image url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQBAMAAADdUfNzAAAAJFBMVEVMaXH///////////////////////////////////////////9tKdXLAAAAC3RSTlMAhIGHdHx4bmpnjdxPyfwAAAA8SURBVHgBY+CawAAE2jtApPXuAiDJvHsLhOMAJBl3bwNxpHcHgDmbgCQTkASLgGXBTAewLogJMNMgJgMAknoTBEQdAxkAAAAASUVORK5CYII=')
+    //  position absolute
+    //  display block
+    //  width 60px
+    //  height 60px
+    //  background-color rgba(0,0,0, 0.3)
+    //  border 2px solid #fff
+    //  border-left none
+    //  z-index 1
+    //  background-repeat no-repeat
+    //  background-position center center
+    //  cursor pointer
+    //  user-select none
+    //  overflow hidden
+    //  color #fff
+    //  text-indent -1000px
+    //
+    //  &:hover {
+    //    background-color rgba(0,0,0, 0.6)
+    //  }
+    //}
+  }
+
+  &__stage-wrapper {
+    position relative
+    overflow hidden
+    margin 0
+    padding 0
+  }
+
+  &__stage {
+    margin 0
+    padding 0
+    list-style none
+    white-space nowrap
+    position relative
+    transition left 300ms linear
+    left 0
+  }
+
+  &__item {
+    display inline-block
+    vertical-align top
+    width 100%
+
+    ^[0]_thumbs &_card-module {
+      width auto
+      height auto
+
+      /*& div {
+        background-size cover
+        background-position center
+        background-repeat no-repeat
+        height 450px
+      }*/
+
+
+    }
+/*      & div {
+        width 100% !important
+      }
+    }*/
+
+    &_thumbs img {
+      border 2px solid #fff
+    }
+
+    &_active img {
+      border 2px solid #FFCC00
+    }
+
+    .uis-carousel_main & div {
+      overflow hidden
+      width auto !important
+      height auto !important
+
+      & img {
+        max-width 100%
+      }
+    }
+  }
+
+  &__dots {
+    position absolute
+    bottom 20px
+    left 0
+    right 0
+    text-align center
+    z-index 1
+
+    &-item {
+      display inline-block
+      width 10px
+      height 10px
+      border 1px solid currentColor
+      border-radius 50%
+      cursor pointer
+      margin 0 4px
+
+      &_active {
+        background-color currentColor
+      }
+    }
+
+  }
+}

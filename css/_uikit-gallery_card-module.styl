@@ -1,0 +1,93 @@
+/*
+  Захордкоженные стили для галереи.
+  Иначе в мобильном сафари из-за галереи карточка перерисовывается как для декстопа
+  Не device-width, т.к. модуль может быть без адаптивного тэга
+*/
+
+.uikit-gallery {
+
+  &_card-module {
+    margin 0 auto
+  }
+
+  & .uikit-image-with-loader__img{
+      width 100%;
+      object-fit: cover;
+  }
+}
+
+/**
+ * MODULES-1022: привязка к orientation убрана, т.к яблоки не поддерживают http://caniuse.com/#feat=screen-orientation
+ * к тому же нельзя, чтобы в landscape режиме фото не влазила по высоте.
+ */
+
+  /* IPad in portrait */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  .uikit-gallery_card-module {
+    width 520px
+  }
+}
+
+// /* IPad in landscape */
+// @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+//   .uikit-gallery_card-module {
+//     width 700px
+//   }
+// }
+
+//   /* iPhone 2G-4S in landscape */
+// @media only screen and (min-width : 320px) and (max-width : 480px) and (orientation : landscape) {
+//   .uikit-gallery_card-module {
+//     width 440px
+//   }
+// }
+
+  /* iPhone 2G-4S in portrait */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .uikit-gallery_card-module {
+    width 300px
+  }
+}
+
+//   /* iPhone 5 & 5S in landscape */
+// @media only screen and (min-width : 320px) and (max-width : 568px) and (orientation : landscape) {
+//   .uikit-gallery_card-module {
+//     width 528px
+//   }
+// }
+
+  /* iPhone 5 & 5S in portrait */
+@media only screen and (min-width : 320px) and (max-width : 568px) {
+  .uikit-gallery_card-module {
+    width 300px
+  }
+}
+
+//   /* iPhone 6 in landscape */
+// @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+//   .uikit-gallery_card-module {
+//     width 627px
+//   }
+// }
+
+  /* iPhone 6 in portrait */
+@media only screen and (min-width : 375px) and (max-width : 667px) {
+  .uikit-gallery_card-module {
+    width 355px
+  }
+}
+
+//   /* iPhone 6 Plus in landscape */
+// @media only screen and (min-width : 414px) and (max-width : 736px) and (orientation : landscape) {
+//   .uikit-gallery_card-module {
+//     // width 696px
+//     width 550px // MODULES-1022
+//   }
+// }
+
+/* iPhone 6 Plus in portrait */
+@media only screen and (min-width : 414px) and (max-width : 736px) {
+  .uikit-gallery_card-module {
+    width 394px
+  }
+}

@@ -1,0 +1,6 @@
+lib
+node_modules
+typings
+.idea
+.git
+*.log

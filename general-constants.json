@@ -1,0 +1,63 @@
+{
+  "release": {
+    "STYLES_PATH": "https://ui.sletat.ru/tour-card/"
+  },
+  "test1": {
+    "STYLES_PATH": "https://uidev.sletat.ru/tour-card/"
+  },
+  "test2": {
+    "STYLES_PATH": "https://uidev2.sletat.ru/tour-card/"
+  },
+  "test3": {
+    "STYLES_PATH": "https://uidev3.sletat.ru/tour-card/"
+  },
+  "test4": {
+    "STYLES_PATH": "https://uidev4.sletat.ru/tour-card/"
+  },
+  "test5": {
+    "STYLES_PATH": "https://uidev5.sletat.ru/tour-card/"
+  },
+  "test6": {
+    "STYLES_PATH": "https://uidev6.sletat.ru/tour-card/"
+  },
+  "test7": {
+    "STYLES_PATH": "https://uidev7.sletat.ru/tour-card/"
+  },
+  "test8": {
+    "STYLES_PATH": "https://uidev8.sletat.ru/tour-card/"
+  },
+  "test9": {
+    "STYLES_PATH": "https://uidev9.sletat.ru/tour-card/"
+  },
+  "test10": {
+    "STYLES_PATH": "https://uidev10.sletat.ru/tour-card/"
+  },
+  "dmtrv": {
+    "STYLES_PATH": "https://modx.sletat.ru/testsletat/module40/mtest2/macstyle/"
+  },
+  "sukovatij": {
+    "STYLES_PATH": "//some-site.by:8001/static/"
+  },
+  "zaytseva": {
+    "STYLES_PATH": "https://devx.sletat.ru/private/zaytseva/tour-card/"
+  },
+  "selkin": {
+    "STYLES_PATH": "https://tour-card.sletat.local/public/"
+  },
+  "ermolaev": {
+    "STYLES_PATH": "https://tour-card-eral.sletat.local/public/"
+  },
+  "ziserman": {
+    "STYLES_PATH": "https://tour-card.sletat.ru/public/"
+  },
+  "vinokurov": {
+    "STYLES_PATH": "https://glebteam.sletat.cf/tour-card/"
+  },
+  "fomichev": {
+    "STYLES_PATH": "//oleg.sletat.cf:8001/static/"
+  },
+  "dev": {
+    "Comment": "Необходимо добавить в hosts",
+    "STYLES_PATH": "http://localhost:8080/"
+  }
+}

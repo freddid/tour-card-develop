@@ -1,0 +1,232 @@
+.certificate-payments-block {
+  margin-top 28px
+
+  &__title {
+    margin 0
+    font-size 18px
+  }
+
+  &__subtitle {
+    margin 8px 0 16px
+    font-size 12px
+  }
+
+  &__certificate-error-message {
+    color red
+  }
+
+  &__payment-checkbox-label {
+    font-size 14px
+  }
+
+  &__certificate-fields {
+    position relative
+  }
+
+  &__support-title {
+      font-size 11.4px
+      margin-bottom 6px
+    }
+
+  &__support-checkbox {
+     width 12%
+     margin-right 5px
+     height 64px
+     display inline-block
+     &_active {
+        height 16px
+     }
+  }
+
+  &__support-select {
+    width 85%
+    height 64px
+    display inline-block
+  }
+
+  &__tooltip {
+    font-size 12px
+
+    &_error {
+      color #eb001b
+    }
+
+    &_warning {
+      color #5c5c5c
+    }
+
+    &_action {
+      position relative
+      color #0078be
+      white-space nowrap
+      cursor pointer
+      border-bottom: 1px dashed rgba(0, 120, 190, .25)
+
+      &:hover {
+        color  #00c3ff
+        border-bottom: 1px dashed rgba(0, 195, 255, .25);
+      }
+    }
+  }
+
+  &__tooltip-box {
+    z-index 2
+    background-color #ffffff
+    margin-bottom 10px
+    font-size 12px
+    color #606060
+  }
+
+  &__add-certificate-button {
+    color #0078be
+    white-space nowrap
+    cursor pointer
+    margin-top 10px
+    user-select none
+    width fit-content
+
+    &:hover {
+      color  #00c3ff
+    }
+
+    &_disabled {
+      color #bdbdbd
+      pointer-events none
+    }
+  }
+
+  &__certificate-buttons {
+    display flex
+    font-size 32px
+    width 45%
+    justify-content flex-end
+    height 32px
+    margin-top 16px
+    margin-right 20px
+  }
+
+  &__apply-certificate-button {
+    position relative
+    border 1px solid #2DB29F
+    box-shadow 0 0 3px 0 rgba(0, 0, 0, 0.07)
+    margin-right 16px
+    cursor pointer
+    text-align center
+    color #2db29f
+    font-size 14px
+    padding 6px 15px
+    line-height 18px
+
+    &_disabled {
+      pointer-events none
+      opacity 0.3
+      border 1px solid #2DB29F
+      box-shadow 0 0 0 0 rgba(0, 0, 0, 0)
+
+      &::after {
+        color #888
+      }
+    }
+    &:hover{
+      background #2DB29F
+      color #ffffff
+
+      svg {
+        fill #ffffff
+      }
+    }
+  }
+
+  &__delete-certificate-button {
+    position relative
+    font-size 14px
+    color #D53232
+    border 1px solid #D53232
+    box-shadow 0 0 3px 0 rgba(0, 0, 0, 0.07)
+    cursor pointer
+    text-align center
+    padding 6px 15px
+    line-height 18px
+
+    svg {
+      fill #F53A3A
+    }
+
+    svg {
+      fill #F53A3A
+    }
+
+    &::after {
+      position absolute
+      display flex
+      justify-content center
+      width 100%
+      height 100%
+      top -14px
+      content ''
+      color #0078be
+      font-weight 400
+    }
+
+    &:hover{
+      background #D53232
+      color #ffffff
+
+      svg {
+        fill #ffffff
+      }
+    }
+  }
+
+  & .uikit-tooltip {
+    display block
+    width 180px
+    margin-top 24px
+  }
+}
+
+@media all and (min-width: 900px) {
+  .certificate-payments-block {
+    margin 0 0 20px 0
+
+    &__delete-certificate-button {
+       &::after { 
+         top 22px
+         content ''
+       }
+    }
+    &__title-wrap {
+      display flex
+      align-items flex-start
+    }
+
+    &__title {
+      font-size 22px
+    }
+
+    &__subtitle {
+      margin 4px 0 12px
+    }
+
+    &__certificate-fields {
+      display flex
+      flex-wrap wrap
+      position relative
+      align-items center
+    }
+
+    &__input {
+      flex-grow 1
+      width 45%
+      height 64px
+      margin-right 20px
+    }
+
+    &__tooltip-box {
+      position relative
+      bottom 9px
+      margin 0
+      overflow hidden
+    }
+  }
+}

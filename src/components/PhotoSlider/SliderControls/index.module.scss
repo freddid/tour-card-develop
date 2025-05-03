@@ -1,0 +1,33 @@
+@import "../../../theme/theme.scss";
+
+.prevSlideControl,
+.nextSlideControl {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  color: $color-bg-primary;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background-color: transparent;
+
+  &.disabled {
+    cursor: default;
+    display: none;
+  }
+}
+
+.prevSlideControl {
+  left: 5px;
+  transform: rotate(-90deg);
+}
+
+.nextSlideControl {
+  right: 5px;
+  transform: rotate(90deg);
+}

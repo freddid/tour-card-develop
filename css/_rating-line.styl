@@ -1,0 +1,80 @@
+$colorPositive = #85b200
+$colorNegative = #fe0130
+$colorNeutral = #ffda00
+
+.rating-line {
+  position relative
+  font-weight 700
+  text-align right
+  display inline-block
+
+  &:before {
+    content ''
+    position absolute
+    display block
+    bottom -3px
+    left 0
+    right 0
+    height 2px
+    background-color #bababa
+  }
+
+  &:after {
+    content ''
+    position absolute
+    display block
+    bottom -3px
+    left 0
+    height 2px
+  }
+
+  &_mark-1:after {
+    width 10%
+    background-color $colorNegative
+  }
+
+  &_mark-2:after {
+    width 20%
+    background-color $colorNegative
+  }
+
+  &_mark-3:after {
+    width 30%
+    background-color $colorNegative
+  }
+
+  &_mark-4:after {
+    width 40%
+    background-color $colorNegative
+  }
+
+  &_mark-5:after {
+    width 50%
+    background-color $colorNeutral
+  }
+
+  &_mark-6:after {
+    width 60%
+    background-color $colorNeutral
+  }
+
+  &_mark-7:after {
+    width 70%
+    background-color $colorNeutral
+  }
+
+  &_mark-8:after {
+    width 80%
+    background-color $colorPositive
+  }
+
+  &_mark-9:after {
+    width 90%
+    background-color $colorPositive
+  }
+
+  &_mark-10:after {
+    width 100%
+    background-color $colorPositive
+  }
+}

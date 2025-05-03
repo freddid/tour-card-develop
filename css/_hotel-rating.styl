@@ -1,0 +1,43 @@
+.hotel-rating {
+  white-space nowrap
+
+  &:before {
+    content ', '
+  }
+
+  &__star {
+    position relative
+    display inline-block
+    top 2px
+    margin-right 2px
+    width 12px
+    height 1em
+    color #f6a816
+    fill #f6a816
+
+
+    &_hotel-title {
+      width 20px
+      if star is defined {
+        color star
+        fill star
+      }
+    }
+
+    /*&:after {
+      content ""
+      display inline-block
+      position absolute
+      top -2px
+      bottom 0
+      left 0
+      width 16px
+      height 15px
+      margin auto
+      background-image url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIGhlaWdodD0iMTgiIHdpZHRoPSIyMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDIxIDE4Ij4gICAgPHBhdGggZmlsbD0iI2Y2YTgxNiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNIDEwLjUgMCBDIDEwLjUgMCAxMy43MSA1LjY2IDEzLjcxIDUuNjYgQyAxMy43MSA1LjY2IDIwLjI1IDYuODggMjAuMjUgNi44OCBDIDIwLjI1IDYuODggMTUuNyAxMS41OSAxNS43IDExLjU5IEMgMTUuNyAxMS41OSAxNi41MiAxOCAxNi41MiAxOCBDIDE2LjUyIDE4IDEwLjUgMTUuMjYgMTAuNSAxNS4yNiBDIDEwLjUgMTUuMjYgNC40OCAxOCA0LjQ4IDE4IEMgNC40OCAxOCA1LjMgMTEuNTkgNS4zIDExLjU5IEMgNS4zIDExLjU5IDAuNzUgNi44OCAwLjc1IDYuODggQyAwLjc1IDYuODggNy4yOSA1LjY2IDcuMjkgNS42NiBDIDcuMjkgNS42NiAxMC41IDAgMTAuNSAwIiAvPjwvc3ZnPg==')
+      background-repeat no-repeat
+      background-position center
+      background-size 16px 15px
+    }*/
+  }
+}

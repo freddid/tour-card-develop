@@ -1,0 +1,14 @@
+.container {
+  display: block;
+  width: 235px;
+  min-width: 235px;
+  max-width: 235px;
+  margin: 0 20px 0 0;
+}
+
+.container {
+  .stickyWrapper {
+    position: sticky;
+    top: 0;
+  }
+}

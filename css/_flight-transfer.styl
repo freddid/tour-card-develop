@@ -1,0 +1,102 @@
+.flight-transfer {
+  display block
+
+  &__first {
+    padding 0 0 0 20px
+    position relative
+    display block
+
+    &:after {
+      content ''
+      width 11px
+      height 11px
+      display block
+      position absolute
+      box-sizing border-box
+      border 2px solid #c4c4c4
+      border-radius 50%
+      background-color #fff
+      left 2px
+      top 4px
+    }
+
+    &:before {
+      content ''
+      width 1px
+      background-color #c4c4c4
+      position absolute
+      display block
+      top 4px
+      left 7px
+      bottom -2px
+    }
+  }
+
+  &__second {
+    padding 0 0 0 20px
+    position relative
+    display block
+
+    &:after {
+      content ''
+      width 11px
+      height 11px
+      display block
+      position absolute
+      box-sizing border-box
+      border 2px solid #c4c4c4
+      border-radius 50%
+      background-color #fff
+      left 2px
+      top 4px
+    }
+
+    &:before {
+      content ''
+      width 1px
+      background-color #c4c4c4
+      position absolute
+      display block
+      top 0
+      left 7px
+      height 5px
+    }
+  }
+
+  &__time {
+    padding 6px 0 6px 20px
+    position relative
+    display block
+    font-weight bold
+
+    &:after {
+      content ''
+      width 9px
+      height 9px
+      display block
+      position absolute
+      box-sizing border-box
+      border 1px solid #c4c4c4
+      border-radius 50%
+      background-color #c4c4c4
+      left 3px
+      top 10px
+    }
+
+    &:before {
+      content ''
+      width 1px
+      background-color #c4c4c4
+      position absolute
+      display block
+      top -2px
+      left 7px
+      bottom -2px
+    }
+
+  }
+
+  &__text-transform {
+    text-transform uppercase
+  }
+}

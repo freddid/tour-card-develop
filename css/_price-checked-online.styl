@@ -1,0 +1,62 @@
+.price-checked-online {
+  margin .76em 0
+  text-align center
+  padding-right: 0.1em;
+
+  &__text-on {
+    color $colorPositive
+    display inline-block
+
+    &:before {
+      content '\e604'
+      font-family ui-controls
+      width 2em
+      height 2em
+      color #fff
+      font-size .6em
+      font-weight 500
+      border-radius 50%
+      display inline-block
+      vertical-align top
+      text-align center
+      line-height 2
+      margin .2em .6em 0 -2.2em
+      position absolute
+      background-color $colorPositive
+    }
+  }
+
+  &__text-off {
+    color $colorNeutral_for-card
+    display inline-block
+
+    &:before {
+      content '\e604'
+      font-family ui-controls
+      width 2em
+      height 2em
+      color #fff
+      font-size .6em
+      font-weight 500
+      border-radius 50%
+      display inline-block
+      vertical-align top
+      text-align center
+      line-height 2
+      margin .2em .6em 0 -2.2em
+      position absolute
+      background-color $colorNeutral_for-card
+    }
+  }
+
+  &__text-process {
+    display inline-block
+    position relative
+    width 100%
+
+    &:before {
+      content 'progress'
+      color transparent
+    }
+  }
+}

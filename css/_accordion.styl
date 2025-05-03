@@ -1,0 +1,36 @@
+.uikit-accordion {
+  margin-top 0
+  margin-bottom 0
+  margin-left -($cardPadding)
+  margin-right -($cardPadding)
+
+  &:after {
+    content ''
+    display table
+    width 100%
+  }
+
+  &__group-item {
+    background-color link-color
+    position relative
+  }
+
+  &__button {
+    padding 0 $cardPadding
+    background-color link-color
+    font-size 1em
+    line-height 4em
+
+    &:active {
+      background-color alpha(#fff, 20%)
+    }
+  }
+
+  &__group-content {
+    padding 0 $cardPadding
+
+    & > div {
+      padding $cardPadding 0
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@media all and (min-width: 480px) and (max-width: 759px) {
+  .tabs {
+    margin-top 0
+    margin-bottom 0
+    margin-left -($cardPaddingMedia480)
+    margin-right -($cardPaddingMedia480)
+    position relative
+
+    &__navigation {
+      padding-left $cardPaddingMedia480
+      padding-right $cardPaddingMedia480
+
+      &_desctop {
+        display none
+      }
+
+      &_accordion {
+        display block
+        position relative
+        padding 0
+
+        &:before {
+          content ''
+          position absolute
+          left $cardPaddingMedia480
+          right $cardPaddingMedia480
+          top -1px
+          height 1px
+          background-color alpha(#fff,20%)
+        }
+
+        & ^[0]__button {
+          display flex
+          justify-content space-between
+          padding .3em $cardPaddingMedia480
+        }
+
+        & ^[0]__title {
+          border-bottom 0
+        }
+      }
+    }
+
+    &__title {
+
+      &_show-480 {
+        display inline
+      }
+
+      &_hide-480 {
+        display none
+      }
+    }
+
+    &__content {
+      padding $cardPaddingMedia480
+    }
+  }
+}

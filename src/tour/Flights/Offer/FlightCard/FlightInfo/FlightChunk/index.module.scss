@@ -1,0 +1,20 @@
+@import "../../../../../../theme/mixins.scss";
+@import "../../../../../../theme/theme.scss";
+@import "../../../../../../theme/animation.scss";
+
+.flightInfo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+
+  .date {
+    @include font-text-XS; 
+    font-weight: 400;
+    margin-bottom: 3px;
+  }
+
+  .time {
+    @include font-subtitle-XS;
+    margin-bottom: 3px;
+  }
+}

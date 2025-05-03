@@ -1,0 +1,27 @@
+@media all and (max-width: 479px) {
+  .uikit-accordion {
+    margin-left -($cardPaddingMedia320)
+    margin-right -($cardPaddingMedia320)
+
+    &__group-item {
+
+      &:before {
+        left $cardPaddingMedia320
+        right $cardPaddingMedia320
+      }
+    }
+
+    &__button {
+      padding 0 $cardPaddingMedia320
+    }
+
+    &__group-content {
+      padding 0 $cardPaddingMedia320
+
+      & > div {
+        padding $cardPaddingMedia320 0
+      }
+    }
+  }
+}
+  

@@ -1,0 +1,277 @@
+.tourist-data-form {
+
+  &:first-child {
+    margin-top 30px
+  }
+
+  &:not(:last-child) {
+    & .tourist-data-form__form-content {
+      padding-bottom 25px
+    }
+  }
+
+  &__checkboxPatronymic {
+    padding-left 0.25rem
+    display flex
+  }
+
+  &__title {
+    max-height 20px
+    margin 0 0 10px
+    font-family 'Panton', 'Arial', sans-serif
+    font-size 16px
+    display flex
+
+    &_valid {
+      position relative
+
+      &::before {
+        content ''
+        position absolute
+        top 2px
+        left -22px
+        width 12px
+        height 12px
+        background-image url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='13' viewBox='0 0 12 13'%3E%3Cpath fill='%234db45e' d='M11 0L4 10.7.9 7 0 8.2 4.2 13 12 1z'/%3E%3C/svg%3E%0A")
+        background-repeat no-repeat
+      }
+    }
+  }
+
+  &__row {
+    display flex
+    flex-direction column
+
+    &:last-child {
+      & .tourist-data-form__input {
+        margin-bottom 0
+        width 100%
+      }
+    }
+  }
+
+  &__input {
+    flex-grow 1
+    width 33%
+  }
+
+  &__button-group {
+    display flex
+    flex-direction column
+    margin 0 0 10px
+
+    &_hidden {
+      display none
+    }
+  }
+
+  &__button-group-title {
+    margin: 3px 0;
+    font-size: 12px;
+    color: #313140;
+  }
+
+  &__document-field {
+    width 306px
+  }
+
+  &__name-tip {
+    position relative
+    bottom 8px
+    color #0078be
+    cursor pointer
+
+    &:hover {
+      color #00c3ff
+    }
+
+    &::after {
+      content ''
+      position absolute
+      left 0
+      right 0
+      bottom 0
+      height 1px
+      border-bottom 1px dashed currentColor
+      opacity .25
+    }
+  }
+
+  &__collapse-button {
+    position relative
+    bottom 1px
+    margin-left 8px
+    padding 0 19px 0 0
+    color #0078be
+    font-family 'Open Sans', 'Helvetica', 'Arial', sans-serif
+    font-size 16px
+    background-color transparent
+    border 0
+    outline 0
+    cursor pointer
+
+    &:hover {
+      color #00c3ff
+    }
+
+    &:focus {
+
+      &::before {
+        content ''
+        position absolute
+        bottom -1px
+        left 0
+        right 0
+        height 1px
+        background-color rgba(0, 123, 188, 0.25)
+      }
+    }
+
+    &::after {
+      content ''
+      position absolute
+      top 11px
+      right 2px
+      width 7px
+      height 7px
+      border-bottom 1px solid currentColor
+      border-right 1px solid currentColor
+      transform rotate(-135deg)
+      transition-property top, transform
+      transition-duration .2s
+      transition-timing-function ease-in-out
+    }
+
+    &_collapsed {
+
+      &::after {
+        top 6px
+        transform rotate(45deg)
+      }
+    }
+  }
+
+  &__tooltip-box {
+    position relative
+    bottom 9px
+    margin 0
+    overflow hidden
+  }
+
+  &__when-gived{
+    bottom -9px
+    position relative
+  }
+
+  &__tooltip {
+    font-size 12px
+
+    &_error {
+      color #eb001b
+    }
+
+    &_warning {
+      color #5c5c5c
+    }
+
+    &_action {
+      position relative
+      color #0078be
+      white-space nowrap
+      cursor pointer
+      border-bottom: 1px dashed rgba(0, 120, 190, .25)
+
+      &:hover {
+        color  #00c3ff
+        border-bottom: 1px dashed rgba(0, 195, 255, .25);
+      }
+    }
+  }
+
+  &__duplicate-button,
+  &__clear-button {
+    position relative
+    margin-left 8px
+    color #0078be
+    font-family 'Open Sans', 'Helvetica', 'Arial', sans-serif
+    font-size 13px
+    cursor pointer
+
+    &:hover {
+        color #00c3ff
+      }
+
+    &::after {
+      content ''
+      position absolute
+      left 0
+      right 0
+      bottom 0
+      height 1px
+      border-bottom 1px dashed currentColor
+      opacity .25
+    }
+  }
+
+  &__clear-button {
+    padding 0
+    background-color transparent
+    border 0
+    outline 0
+  }
+
+  &__duplicate-info-tooltip {
+      margin 0 11px
+      padding-bottom 9px
+      color #5c5c5c
+      font-size 13px
+  }
+}
+
+
+@media all and (min-width: 900px) {
+  .tourist-data-form {
+
+    &__row {
+      flex-direction row
+
+      &_foreign-passport {
+        & .tourist-data-form__input_passport-issued-when-input {
+          margin-right 20px !important
+          margin-left 0 !important
+        }
+      }
+    }
+
+    &__input {
+      &_birthdate-input {
+        margin-right 20px !important
+      }
+
+      &_passport-issued-when-input {
+        margin-left 20px !important
+      }
+
+      &_surname, &_firstname {
+        margin-right: 10px !important
+      }
+    }
+
+    &__button-group {
+      flex-grow 0
+      margin 0
+      width 100%
+      max-width 240px !important
+
+      &_hidden {
+        display none
+      }
+    }
+
+    &__button-group-title {
+      margin 3px 0
+      font-size 12px
+      color #313140
+    }
+  }
+}

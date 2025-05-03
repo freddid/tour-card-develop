@@ -1,0 +1,80 @@
+.tour-price-block {
+  padding 0 .76em
+
+  &__detail {
+    text-align center
+    padding 0
+    margin 1em 0 .9em
+
+    &:after {
+      content ''
+      height 1px
+      display block
+      background-color $hrBorder
+      margin 1em 1em 0
+    }
+
+    &-title {
+      display inline-block
+      vertical-align bottom
+      white-space nowrap
+      margin-bottom .15em
+    }
+
+    &-price-block {
+      display inline-block
+      vertical-align bottom
+      white-space nowrap
+    }
+
+    &-price {
+      font-size 1.15em
+      word-spacing -.15em
+      font-weight 600
+    }
+  }
+
+  &__main {
+    text-align center
+    padding 0
+    margin 1em 0 .9em
+
+    &-title {
+      display block
+    }
+
+    &-price-block {
+      display block
+    }
+
+    &-price {
+      font-size 2.3em
+      line-height 1
+      word-spacing -.15em
+      font-weight 700
+    }
+  }
+
+  &__old-price {
+    display block
+    position relative
+    color $colorGray
+    left -.2em
+    text-decoration line-through
+
+    .b-rub {
+      font-size 1.1em
+    }
+  }
+
+  &__sale {
+    position absolute
+    color #fff
+    font-size .85em
+    background-color $colorNegative
+    padding .15em .2em
+    border-radius .7em
+    margin-left .45em
+    word-spacing -.15em
+  }
+}

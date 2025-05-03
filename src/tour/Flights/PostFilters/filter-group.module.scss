@@ -1,0 +1,58 @@
+@import '../../../theme/theme.scss';
+@import '../../../theme/mixins.scss';
+
+.container {
+  margin-bottom: 12px;
+
+  &.mobileWrapper {
+    margin-bottom: 0;
+    padding: 24px 12px;
+    border-bottom: 1px solid #E0E0E2;
+  }
+
+  & .title:first-child {
+    margin-top: 0;
+  }
+
+  & .title {
+    @include font-text-XS;
+    display: inline-block;
+    margin-bottom: 12px;
+    font-family: inherit;
+    color: $color-brand-grey-very-dark;
+
+    &.mobileTitle{
+      @include font-title-XXS();
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      color: $color-brand-grey-very-dark;
+    }
+  }
+
+  & .controls {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 24px;
+    padding: 20px 16px 24px;
+    background-color: $color-bg-primary;
+
+    &.mobileControls {
+      margin-bottom: 0;
+      padding: 0 0 0 12px;
+    }
+  }
+
+  & .control:not(:last-child) {
+    margin-bottom: 8px;
+
+    &.mobileControl {
+      margin-bottom: 20px;
+    }
+
+    &.withBottom {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #E0E0E2;
+    }
+  }
+}

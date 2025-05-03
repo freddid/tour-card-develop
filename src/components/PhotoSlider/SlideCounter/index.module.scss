@@ -1,0 +1,21 @@
+@import "../../../theme/theme.scss";
+
+.container {
+  padding: 8px;
+  background-color: $color-bg-primary;
+}
+
+.counter {
+  position: absolute;
+  z-index: 0;
+  top: 8px;
+  right: 8px;
+  box-sizing: border-box;
+  padding: 4px 8px;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-brand-white;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: $color-brand-black;
+}

@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "types": ["node"],
+    "experimentalDecorators": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "lib": ["esnext", "dom"],
+  },
+  "formatCodeOptions": {
+    "indentSize": 4,
+    "tabSize": 4,
+    "newLineCharacter": "\r\n",
+    "convertTabsToSpaces": true,
+    "insertSpaceAfterCommaDelimiter": true,
+    "insertSpaceAfterSemicolonInForStatements": true,
+    "insertSpaceBeforeAndAfterBinaryOperators": true,
+    "insertSpaceAfterKeywordsInControlFlowStatements": true,
+    "insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+    "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+    "placeOpenBraceOnNewLineForFunctions": false,
+    "placeOpenBraceOnNewLineForControlBlocks": false
+  },
+  "filesGlob": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "!./node_modules/**/*"
+  ],
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dev_server.js"
+  ],
+  "compileOnSave": false,
+  "atom": {
+    "rewriteTsconfig": false,
+    "formatOnSave": false
+  }
+}

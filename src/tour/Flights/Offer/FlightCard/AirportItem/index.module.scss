@@ -1,0 +1,27 @@
+@import "../../../../../theme/theme.scss";
+@import "../../../../../theme/mixins.scss";
+
+.airPortItem {
+  display: block;
+  height: 18px;
+  padding: 0 4px;
+  box-sizing: border-box;
+  font-size: 11px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: $color-text-accent-dark;
+  cursor: pointer;
+  border: 1px solid $color-text-accent-dark;
+  border-radius: $border-radius-secondary;
+  
+  &:hover {
+    background: $color-selected-item;
+  }
+  
+  @media ($mobile-sm-screen) {
+    font-size: 8px;
+  }
+}

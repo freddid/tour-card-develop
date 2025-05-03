@@ -1,0 +1,29 @@
+@import '../../../../../theme/theme.scss';
+@import '../../../../../theme/mixins.scss';
+
+.container {
+  padding: 16px;
+  background: $color-bg-primary;
+  border-radius: $border-radius-main;
+  
+  &:not(:last-child) {
+    margin: 0 0 16px 0;
+  }
+  
+  &Item {
+    &:not(:last-child) {
+      margin: 0 0 16px 0;
+    }
+  }
+  
+  & .placeholderLg {
+    height: 8px;
+    width: 90%;
+    margin: 0 0 4px 0;
+  }
+  
+  & .placeholderSm {
+    height: 8px;
+    width: 70%;
+  }
+}

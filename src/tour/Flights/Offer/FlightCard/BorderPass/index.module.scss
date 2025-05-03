@@ -1,0 +1,88 @@
+@import "../../../../../theme/theme.scss";
+@import "../../../../../theme/mixins.scss";
+
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  
+  @media($mobile-screen) {
+    flex-flow: column nowrap;
+  }
+}
+
+.price {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-right: 20px;
+  
+  @media ($mobile-screen) {
+    margin-right: 0;
+    
+    &.priceAddition {
+      text-align: right;
+    }
+  }
+}
+
+.priceTitle {
+  @include font-text-XS();
+  margin: 0 0 2px 0;
+  color: $color-text-note;
+}
+
+.priceNumber {
+  @include font-title-XXS();
+  line-height: 20px;
+  color: $color-text-dark;
+}
+
+.buyBtn {
+  @include buttonStyleReset();
+  @include font-button-S();
+  min-width: 158px;
+  height: 40px;
+  margin-left: auto;
+  padding: 10px 16px;
+  color: $color-text-dark;
+  border: 2px solid $color-border-yellow;
+  border-radius: 2px;
+  background: $color-bg-paleYellow;
+  
+  &:hover {
+    background: $color-bg-yellow;
+  }
+  
+  &.btnSelected {
+    color: $color-text-note;
+    border: 2px solid $color-bg-accent;
+    background: $color-bg-accent;
+  }
+  
+  @media ($mobile-screen) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.buyBtnContent {
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.icon {
+  margin-right: 4px;
+}
+
+.priceInner {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  
+  @media ($mobile-screen) {
+    justify-content: space-between;
+    margin: 0 0 8px 0;
+  }
+}

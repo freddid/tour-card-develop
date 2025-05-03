@@ -1,0 +1,82 @@
+.uikit-tabs {
+
+  &_tour-card {
+    margin-left -($cardPadding)
+    margin-right -($cardPadding)
+  }
+
+  &__header {
+
+    &_tour-card {
+      background-color main-bg
+      color label-main-color
+      padding .4em $cardPadding 0
+    }
+  }
+
+  &__content {
+
+    &_tour-card {
+      padding $cardPadding
+    }
+  }
+
+  &__button {
+
+    &_tour-card {
+
+      &:not([class*='_active']) {
+
+        if tab-color is defined {
+          color tab-color
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 479px) {
+  .uikit-tabs {
+    &_tour-card {
+      margin-left -($cardPaddingMedia320)
+      margin-right -($cardPaddingMedia320)
+    }
+
+    &__header {
+
+      &_tour-card {
+        padding .4em $cardPaddingMedia320 0
+      }
+    }
+
+    &__content {
+
+      &_tour-card {
+        padding $cardPaddingMedia320
+      }
+    }
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 759px) {
+  .uikit-tabs {
+    &_tour-card {
+      margin-left -($cardPaddingMedia480)
+      margin-right -($cardPaddingMedia480)
+    }
+
+    &__header {
+
+      &_tour-card {
+        padding .4em $cardPaddingMedia480 0
+      }
+    }
+
+    &__content {
+
+      &_tour-card {
+        padding $cardPaddingMedia480
+      }
+    }
+  }
+}

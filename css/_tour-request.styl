@@ -1,0 +1,28 @@
+.tour-request {
+  display flex
+  width 100%
+
+  &__agency {
+    box-sizing: border-box;
+    flex-basis: 35%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding-left: 3%;
+    width: 35%;
+  }
+
+  &__form {
+    flex-basis: 65%;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+
+  &__text {
+    color $colorGray
+    margin 5px 0
+
+    &:first-child {
+      margin-top 0
+    }
+  }
+}

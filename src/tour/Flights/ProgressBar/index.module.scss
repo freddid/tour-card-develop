@@ -1,0 +1,42 @@
+@import '../../../theme/theme.scss';
+@import '../../../theme/mixins.scss';
+
+@keyframes animateLoaderStripes {
+  from { 
+    background-position: 0 0; 
+  }
+  to { 
+    background-position: 93px 0; 
+  }
+}
+
+.container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  height: 38px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background-color: #ececec;
+
+  & .progressBar {
+    padding-left: 11px;
+    min-height: 38px;
+    background-color: #95b749;
+    background-size: 95px 119px;
+    background-image: linear-gradient(130deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%);
+    width: 63%;
+    border-radius: 4px;
+    transition: width 3s ease-in-out;
+    animation: animateLoaderStripes .6s linear infinite;
+  }
+
+  & .text {
+    position: absolute;
+    left: 11px;
+    top: 11px;
+    color: $color-text-dark;
+    @include font-text-XS
+  }
+}

@@ -1,0 +1,54 @@
+include: 
+  - project: devops/gitlab-pipelines
+    file: /templates/deploy/bumpversion.yml
+  - project: 'devops/gitlab-pipelines'
+    file: frontend/modules.yml
+  - project: 'devops/gitlab-pipelines'
+    file: templates/notifications/notification-qa-slt.yml
+
+.build-modules:
+  variables:
+    BUILD_CONFIG: test:$CI_JOB_NAME
+  image: gitlab.global.sletat.ru:4567/slt/docker-images/node-16.20.0
+  script: 
+    - npm run prepare:$BUILD_METHOD
+    - node ./api-config-modifier --content=MODULE_HOST_NAME--$MODULE---CLAIMS_HOST_NAME--$CLAIMS---UI_SLETAT_API_HOST_NAME--$UI---URL_SHORTENER_API_HOST_NAME--$SHORTENER---LEADHUB_HOST_NAME--$LEADHUB---API_SLETAT_HOST_NAME--$APISLETAT
+    - npm run lint
+    - npm run build:$BUILD_CONFIG
+
+uidev:
+  extends: .build-modules
+
+uidev2:
+  extends: .build-modules
+
+uidev3:
+  extends: .build-modules
+
+uidev4:
+  extends: .build-modules
+
+uidev5:
+  extends: .build-modules
+
+uidev6:
+  extends: .build-modules
+
+uidev7:
+  extends: .build-modules
+
+release:
+  variables:
+    BUILD_CONFIG: release
+  extends: 
+    - .modules-release
+
+notification:
+  extends: .notification-qa-slt-stage
+  variables:
+    APPNAME: tour-card
+  needs:
+    - job: release
+      artifacts: false
+  only:
+    - master

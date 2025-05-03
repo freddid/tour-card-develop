@@ -1,0 +1,38 @@
+@import "../../../../../../theme/theme.scss";
+@import "../../../../../../theme/mixins.scss";
+
+.transferBtn {
+  @include buttonStyleReset();
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 2px 8px;
+  white-space: nowrap;
+  color: $color-text-accent-dark;
+  background: $color-bg-accent;
+  border-radius: $border-radius-secondary;
+  margin: 0 0 4px;
+  
+  &.directFlight,
+  &.transferBtnNoConcrete {
+    cursor: default;
+    white-space: normal;
+    background: transparent;
+    color: $color-text-dark;
+  }
+  
+  &.transferBtnNoConcrete {
+    color: $color-error;
+    margin: 8px 0 16px 0;
+  }
+  
+  &:not(.directFlight, .transferBtnNoConcrete):hover {
+    background: transparent;
+    color: $color-text-dark;
+  }
+}
+
+.caption {
+  @include font-text-XS();
+  padding: 0 0 0 4px;
+}

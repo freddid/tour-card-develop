@@ -1,0 +1,13 @@
+**/node_modules
+*.log
+/dist
+/lib
+/public
+.idea
+/.svn
+/storybook_public
+/src/SVGBundle.tsx
+/src/config/api-consts
+/src/config/general-constants.ts
+
+**/node.exe

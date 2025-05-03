@@ -1,0 +1,42 @@
+@import "../../../../../theme/theme.scss";
+@import "../../../../../theme/mixins.scss";
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.containerItem {
+  @include font-text-XS;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  color: $color-text-note;
+}
+
+.time {
+  font-size: 30px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 40px;
+  color: $color-text-dark;
+  
+  @media($mobile-sm-screen) {
+    @include font-subtitle-S;
+    padding: 0 0 8px 0;
+  }
+  
+  &.timeNoConcrete {
+    color: $color-icon-secondary;
+  }
+}
+
+.date {
+  white-space: nowrap;
+  
+  @media($mobile-sm-screen) {
+    white-space: normal;
+  }
+}

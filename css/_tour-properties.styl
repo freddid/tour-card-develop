@@ -1,0 +1,109 @@
+.tour-properties {
+  list-style none
+  margin .76em 0 0
+  padding 0
+
+  &__item {
+    display inline-block
+    vertical-align top
+    margin-right .76em
+    margin-bottom .76em
+    padding-left 2.4em
+    padding-right .76em
+    box-sizing border-box
+    min-width 10em
+    border-radius 1.15em
+
+    &:last-child {
+      margin-right 0
+    }
+
+    &_positive {
+      background-color alpha($colorPositive, 20%)
+      color $colorPositive
+    }
+
+    &_negative {
+      background-color alpha($colorNegative, 20%)
+      color $colorNegative
+    }
+
+    &_empty {
+      background-color alpha($colorGray, 20%)
+      color $colorGray
+    }
+
+    &_in-progress {
+      background-color alpha($colorGray, 20%)
+      color $colorGray
+
+      & .tour-properties__loader {
+        display block
+      }
+
+      & .tour-properties__description {
+        display none
+      }
+    }
+  }
+
+  &__icon {
+    display inline-block
+    float left
+    width 2.4em
+    height 2.4em
+    border-radius 50%
+    margin-left -2.4em
+    color #fff
+    box-sizing border-box
+    text-align center
+    padding .45em 0 0
+
+    .tour-properties__item_positive & {
+      background-color $colorPositive
+    }
+
+    .tour-properties__item_negative & {
+      background-color $colorNegative
+    }
+
+    .tour-properties__item_empty & {
+      background-color $colorGray
+    }
+
+    .tour-properties__item_in-progress & {
+      background-color $colorGray
+    }
+
+    &_arrival {
+      transform rotate(180deg)
+    }
+  }
+
+  &__title {
+    display block
+    font-size .76em
+    line-height 1.4
+    text-transform uppercase
+    color $colorBlack
+    padding-left .2em
+    margin-top .2em
+  }
+
+  &__description {
+    display block
+    font-size 1em
+    font-weight bold
+    line-height 1
+    text-transform uppercase
+    padding-left .2em
+  }
+
+  &__loader {
+    position relative
+    font-size 1.2em
+    line-height 1
+    margin-top .6em
+    display none
+  }
+}

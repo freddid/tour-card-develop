@@ -1,0 +1,86 @@
+.tour-parameters {
+  margin 0
+  padding 0
+  display table
+  table-layout fixed
+
+  &__item {
+    display table-row
+
+    .tour-parameters[class*='_view-block'] & {
+      display flex
+      margin 1.6em 0 0
+
+      &:first-child {
+        margin-top 0
+      }
+    }
+  }
+
+  &__name {
+    display table-cell
+    padding .4em 0 .45em
+    width 12em
+    font-weight 600
+    overflow hidden
+
+    .tour-parameters:not([class*='_view-block']) &:after {
+      content '..................................................................................................'
+      color $colorGray
+      width 0
+      display inline-block
+      font-weight 400
+      font-size .76em
+    }
+
+    .tour-parameters:not([class*='_view-block']) &_flight:after,
+    &_flight:after {
+      display none
+    }
+
+    .tour-parameters[class*='_view-block'] & {
+      display block
+      width auto
+      padding 0
+      margin 0
+    }
+  }
+
+  &__link {
+    color #4A90E2
+    cursor pointer
+  }
+
+  &__value {
+    box-sizing border-box
+    padding .4em 0 .45em .76em
+    display table-cell
+    margin 0
+
+    .tour-parameters[class*='_view-block'] & {
+      display block
+      width auto
+      padding 0
+    }
+  }
+
+  &__value::first-letter {
+    text-transform: uppercase;
+  }
+
+  &__loader {
+    position relative
+    max-width 100px
+    padding .4em 0 .45em .76em
+  }
+
+  &-flight {
+    display flex
+    max-width 640px
+  }
+
+  &-combined {
+    color #0078be
+    font-weight 700
+  }
+}

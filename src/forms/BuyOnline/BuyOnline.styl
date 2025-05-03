@@ -1,0 +1,316 @@
+.buy-online {
+  padding 20px 10px
+
+  &__form {
+    box-sizing border-box
+    margin-top 16px
+    width 100%
+  }
+
+  &__title-wrap {
+    display flex
+    align-items flex-start
+  }
+
+  &__title {
+    margin 0
+    font-size 18px
+  }
+
+  &__subtitle {
+    margin 4px 0 0
+    font-size 12px
+  }
+
+  &__collapse-button {
+    position relative
+    margin 0
+    padding 0 19px 1px 0
+    color #0078be
+    font-size 14px
+    font-family inherit
+    text-align left
+    background-color transparent
+    border 0
+    outline 0
+    cursor pointer
+
+    &:hover {
+      color #00c3ff
+    }
+
+    &::after {
+      content ''
+      position absolute
+      top 6px
+      right 2px
+      width 7px
+      height 7px
+      border-bottom 1px solid currentColor
+      border-right 1px solid currentColor
+      transform rotate(45deg)
+      transition-property top, transform
+      transition-duration .2s
+      transition-timing-function ease-in-out
+    }
+
+    &_expand {
+
+      &::after {
+        top 11px
+        transform rotate(-135deg)
+      }
+    }
+  }
+
+
+  &__tourists-list {
+    margin-top 40px
+  }
+
+  &__agreement {
+    margin-top 20px
+  }
+
+  &__agreement-label {
+    display flex
+    flex-wrap wrap
+  }
+
+  &__payment-options {
+    margin-top: 40px
+  }
+
+  &__payment-info {
+    position relative
+    margin-top 20px
+  }
+
+  &__comment-block {
+    position relative
+    margin-top 10px
+  }
+
+  &__MGT-cert-warning {
+    margin-bottom: 16px;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #E24A4A;
+  }
+
+  &__link {
+    &:hover {
+      color #00c3ff
+    }
+  }
+
+  &__submit-button-wrapper {
+    position relative
+    margin-top 20px
+    height 60px
+  }
+
+  &__submit-button-warning {
+    display none
+
+    &_visible {
+      position absolute
+      top -4px
+      right 0
+      display block
+      width 100%
+      height 100%
+      max-width 235px
+      max-height 60px
+      padding 3px 8px
+      color #fff
+      font-size 12px
+      font-weight 400
+      background-color rgb(60, 60, 73)
+      border-radius 2px
+      box-sizing border-box
+      transform translateX(-10px)
+      z-index 1
+
+      &::before {
+        content ''
+        position absolute
+        top 50%
+        left -10px
+        border 5px solid transparent
+        border-right 5px solid rgb(60, 60, 73)
+        transform translateY(-50%)
+      }
+    }
+
+    b {
+      cursor pointer
+      color #ffca00
+      font-weight 400
+    }
+  }
+
+  &__submit-button {
+    box-sizing border-box
+    width 100%
+    height 60px
+    font-family inherit
+    font-size 16px
+    color #ffffff
+    border 0
+    border-radius 2px
+    background-color #2db29f
+    cursor pointer
+
+    &:hover,
+    &:active {
+      background-color #fed63f
+    }
+
+    &:focus {
+      border 1px solid rgba(0, 123, 188, .4)
+      outline 0
+    }
+
+    &_disabled {
+      color #bdbdbd
+      background-color #ededed
+      cursor default
+
+      &:hover,
+      &:active {
+        background-color #ededed
+      }
+    }
+
+    &_shake {
+      animation horizontal-shake 1s ease-in-out
+    }
+  }
+
+  &__payment-attention {
+    margin 20px 0 0
+    color #606060
+    font-size 12px
+  }
+
+  &__feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 200px;
+    text-align: center;
+  }
+
+
+  &__message-success {
+    display inline-block
+    vertical-align middle
+    text-align center
+
+    &:before {
+      content ''
+      background-image url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAuCAMAAACvSe/GAAAAhFBMVEVMaXGAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqirpmXX0AAAAK3RSTlMAA7fnBvz1C/kVzFYPTuAapzNy1x/vh8ZdQSavapllKkh523+/0cI9oJA6HKTxVAAAATpJREFUeF6l1dtygjAYBGBEzqACWgChKqLaNu//fh3H7E3DnzLL3oZvICHZOHxWLQDpczUu8V6ulPpc8b5Tr7gh6131jsv5EH595vwN/sj5h/Zbzmc1/IHzifZXzsdL/V37/Y7yuz18vMzfOX+4ap+QfgufUf4IX5N+rf0jpPwZ/mb6+DnPSw0Q1sHlP198wHuT3RBtZvrO9E7+GohSm/+x+eo95Deyfwba51MdOiqdXvKt4JFB6ZTT/gL/JXV4qXQG2dvvgF7pVKbfRPCOJSdfP/X916fwGBHS+NPvSX3528w3mSvVyF6ea+6ZMxsNYFvtzoMX/459v+C89eL+sO94nPhS9PYzh84ahB1uT4HWSCr4E9dbiN+wzQlPdj98yt8+aCn+/kNP8jc4mppJnMCzyeqgBeASFrPBL+mCUx2GQN4dAAAAAElFTkSuQmCC")
+      background-position center
+      background-repeat no-repeat
+      background-color #CCDDAA
+      border-radius 50%
+      width 100px
+      height 100px
+      display block
+      margin 0 auto 14px
+    }
+  }
+
+
+  &__message-fail {
+    display inline-block
+    vertical-align middle
+    text-align center
+    color red
+
+    &:before {
+      content ''
+      background-image url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAuCAMAAACvSe/GAAAAhFBMVEVMaXGAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqiqAqirpmXX0AAAAK3RSTlMAA7fnBvz1C/kVzFYPTuAapzNy1x/vh8ZdQSavapllKkh523+/0cI9oJA6HKTxVAAAATpJREFUeF6l1dtygjAYBGBEzqACWgChKqLaNu//fh3H7E3DnzLL3oZvICHZOHxWLQDpczUu8V6ulPpc8b5Tr7gh6131jsv5EH595vwN/sj5h/Zbzmc1/IHzifZXzsdL/V37/Y7yuz18vMzfOX+4ap+QfgufUf4IX5N+rf0jpPwZ/mb6+DnPSw0Q1sHlP198wHuT3RBtZvrO9E7+GohSm/+x+eo95Deyfwba51MdOiqdXvKt4JFB6ZTT/gL/JXV4qXQG2dvvgF7pVKbfRPCOJSdfP/X916fwGBHS+NPvSX3528w3mSvVyF6ea+6ZMxsNYFvtzoMX/459v+C89eL+sO94nPhS9PYzh84ahB1uT4HWSCr4E9dbiN+wzQlPdj98yt8+aCn+/kNP8jc4mppJnMCzyeqgBeASFrPBL+mCUx2GQN4dAAAAAElFTkSuQmCC")
+      background-position center
+      background-repeat no-repeat
+      width 64px
+      height 46px
+      display block
+      margin 0 auto 14px
+    }
+  }
+
+
+}
+
+
+@media all and (min-width: 900px) {
+  .buy-online {
+    display flex
+    justify-content space-between
+    padding 60px 60px 60px 40px
+    font-family inherit
+    font-size 13px
+    color #314040
+
+    &__form {
+      margin 0
+      width 468px
+    }
+
+    &__title {
+      font-size 22px
+    }
+
+    &__collapse-button {
+      font-size 16px
+
+      &:focus {
+        padding-bottom 0
+        border-bottom 1px solid rgba(0, 123, 188, 0.25)
+      }
+    }
+
+    &__tourists-list {
+      margin-top 48px
+    }
+
+    &__submit-button {
+      width 224px
+      height 48px
+    }
+
+    &__tourists-form {
+      padding-top 10px
+    }
+
+    &__payment-attention {
+      margin-top 10px
+    }
+  }
+}
+
+@keyframes horizontal-shake {
+  17% {
+    transform translateX(8px)
+  }
+  33% {
+    transform translateX(-6px)
+  }
+  50% {
+    transform translateX(4px)
+  }
+  67% {
+    transform translateX(-2px)
+  }
+  83% {
+    transform translateX(1px)
+  }
+  100% {
+    transform translateX(0)
+  }
+}

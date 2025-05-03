@@ -1,0 +1,98 @@
+.uikit-button-group {
+
+  &_tourist-data-form {
+    margin:0 0 3px 0
+    color #313140
+    padding 0 0 5px !important
+    border-bottom 1px solid #dcdcdc
+  }
+
+  &__button {
+
+    &_tourist-data-form {
+      font-size 12px !important
+    }
+  }
+
+  &__item {
+
+    &:first-child {
+      margin-right 10px
+
+      & .uikit-button-group__button {
+        border-top-left-radius 0
+        border-bottom-left-radius 0
+        border-left-width 0
+      }
+    }
+
+    &:last-child {
+
+      & .uikit-button-group__button {
+        border-top-right-radius 0
+        border-bottom-right-radius 0
+      }
+    }
+  }
+
+  &__button {
+
+    &_tourist-data-form {
+      height auto
+      padding 1px
+      color #dcdcdc
+      font-family inherit
+      font-size 16px
+      line-height 1
+      border 0
+      transition color .2s
+
+      &:hover {
+        background-color transparent
+      }
+
+      &:focus {
+        box-shadow 0 0 1px 2px rgba(0, 123, 188, 0.4)
+      }
+    }
+
+    &_tourist-data-form&_selected {
+      color #314040
+      background-color transparent
+    }
+  }
+}
+
+.uikit-text {
+
+  &_hidden {
+    display none
+  }
+
+  &_passport-field {
+    width 100%
+  }
+
+  &__input {
+    &_passport-field {
+      width 100% !important
+    }
+  }
+}
+
+.uikit-datepicker {
+
+  &_hidden {
+    display none
+  }
+}
+
+
+@media all and (min-width: 900px) {
+  .uikit-button-group {
+    &_tourist-data-form {
+      margin 3px 0
+      padding 0 0 10px !important
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import '../../../../../theme/theme.scss';
+@import '../../../../../theme/mixins.scss';
+
+.tooltipContainer {
+  @include font-text-XS;
+  color: $color-text-light;
+}
+
+.logo {
+  background: $color-bg-primary;
+  margin: 0 0 8px 0;
+  border-radius: 4px;
+}
+
+.logoImage {
+  display: block;
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 4px;
+}
+
+.airlineName {
+  font-weight: 700;
+}

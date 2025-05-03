@@ -1,0 +1,41 @@
+.card-hotel {
+
+  &__title {
+    font-size 21px
+    font-weight 600
+    margin-top 0
+    margin-bottom 0
+    margin-left -($cardPadding)
+    margin-right -($cardPadding)
+    padding 12px $cardPadding 8px
+    background-color main-bg
+    color label-main-color
+  }
+
+  &__gallery {
+    width 76%
+    position relative
+    float right
+    overflow hidden
+  }
+
+  &__wrapper-gallery-weather {
+    width 100%
+  }
+
+  &__description-short {
+    float left
+    width 24%
+  }
+
+  &__description-long {
+    clear both
+    padding-top 14px
+
+    p {
+      margin .8em 0
+      padding 0
+      line-height 1.5
+    }
+  }
+}

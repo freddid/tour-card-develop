@@ -1,0 +1,329 @@
+.button {
+
+  &-anchor-order {
+    margin .8em auto
+    display block
+    width 100%
+
+    if franchise is defined {
+      max-width 10.4em
+    }
+    if !(franchise is defined) {
+      text-decoration none
+      border 0
+      text-transform uppercase
+      color button-color
+      font-weight 600
+      font-size 1em
+      font-family inherit
+      line-height 3.08em
+      height 3.08em
+      background-color button-bg
+      border-radius .3em
+      box-shadow none
+      padding 0 .4em
+      box-sizing border-box
+      text-align center
+      max-width 15.4em
+      TransitionHover()
+
+      &:visited {
+        background-color alpha(@background-color, 80%) !important
+        box-shadow none
+        padding 0 .4em !important
+        line-height 3.08em !important
+        top 0 !important
+      }
+
+      &:hover {
+        background-color alpha(@background-color, 80%) !important
+        box-shadow none
+        padding 0 .4em !important
+        line-height 3.08em !important
+        top 0 !important
+      }
+
+      &:active {
+        background-color alpha(@background-color, 90%) !important
+        box-shadow none
+        padding 0 .4em !important
+        line-height 3.08em !important
+        top 0 !important
+      }
+    }
+  }
+
+  &-anchor-buy {
+    margin .8em auto
+    display block
+    width 100%
+
+    if franchise is defined {
+      max-width 10.4em
+      line-height 46px
+      background-color rgba(255,255,255,.7)
+    }
+
+    if !(franchise is defined) {
+      text-decoration none
+      border 1px solid button-bg
+      text-transform uppercase
+      color inherit
+      font-weight 600
+      font-size 1em
+      font-family inherit
+      line-height 3.08em
+      height 3.08em
+      background-color transparent
+      border-radius .3em
+      box-shadow none
+      padding 0 .4em
+      box-sizing border-box
+      text-align center
+      max-width 15.4em
+      TransitionHover()
+
+      &:hover {
+        background-color button-bg !important
+        color button-color
+        box-shadow none
+        padding 0 .4em !important
+        line-height 3.08em !important
+        top 0 !important
+      }
+
+      &:active {
+        background-color button-bg !important
+        color button-color
+        box-shadow none
+        padding 0 .4em !important
+        line-height 3.08em !important
+        top 0 !important
+      }
+    }
+
+  }
+
+  &-send-form-comment {
+    text-decoration none
+    border 0
+    text-transform uppercase
+    color button-color
+    font-weight 600
+    font-size 1em
+    font-family inherit
+    line-height 3.08em
+    height 3.08em
+    background-color button-bg
+    border-radius .3em
+    display block
+    margin-bottom .8em
+    margin-top .8em
+    padding 0 .4em
+    box-sizing border-box
+    max-width 15.4em
+    width 100%
+    text-align center
+    TransitionHover()
+
+    &:visited {
+      background-color alpha(@background-color, 80%) !important
+    }
+
+    &:hover {
+      background-color alpha(@background-color, 80%) !important
+    }
+
+    &:active {
+      background-color alpha(@background-color, 90%) !important
+    }
+
+  }
+
+  &-group-tour-price {
+    margin 24px 0 20px
+  }
+
+  &-send-report-small {
+    margin 0 auto
+    display block
+    width 100%
+    float right
+
+    if franchise is defined {
+      max-width 10.4em
+    }
+    if !(franchise is defined) {
+      text-decoration none
+      border 0
+      text-transform uppercase
+      color button-color
+      font-weight 600
+      font-size 1em
+      font-family inherit
+      line-height 3.08em
+      height 3.08em
+      background-color button-bg
+      box-shadow none
+      border-radius .3em
+      display block
+      margin 0 auto
+      padding 0 .4em
+      box-sizing border-box
+      max-width 15.4em
+      width 100%
+      text-align center
+      TransitionHover()
+
+      &:visited {
+        background-color alpha(@background-color, 80%) !important
+        box-shadow none
+        padding 0 .4em !important
+        line-height 3.08em !important
+        top 0 !important
+      }
+
+      &:hover {
+        background-color alpha(@background-color, 80%) !important
+        box-shadow none
+        padding 0 .4em !important
+        line-height 3.08em !important
+        top 0 !important
+      }
+
+      &:active {
+        background-color alpha(@background-color, 90%) !important
+        box-shadow none
+        padding 0 .4em !important
+        line-height 3.08em !important
+        top 0 !important
+      }
+    }
+
+  }
+
+  &-style-clear {
+    text-decoration none
+    border 0
+    background none
+    cursor pointer
+    outline 0
+    color #fff
+    padding 0
+    margin 0
+    line-height inherit
+    font-size inherit
+    font-family inherit
+    TransitionHover()
+
+    &:visited {
+      color rgba(255,255,255,.8)
+    }
+
+    &:hover {
+      color rgba(255,255,255,.8)
+    }
+
+    &:active {
+      color rgba(255,255,255,.8)
+    }
+  }
+
+  &-similar-tours-tooltip {
+    color #fff
+    font-weight 600
+    text-transform uppercase
+    background-color #84b400
+    border-radius .3em
+    border 0
+    display inline-block
+    text-decoration none
+    text-align center
+    padding 1em .4em
+    min-width 19.24em
+    margin .8em auto
+    TransitionHover()
+
+    &:visited {
+      background-color alpha(@background-color, 80%)
+      text-decoration none
+      color #fff
+    }
+
+    &:hover {
+      background-color alpha(@background-color, 80%)
+      text-decoration none
+      color #fff
+    }
+
+    &:active {
+      background-color alpha(@background-color, 90%)
+      text-decoration none
+      color #fff
+    }
+  }
+
+  &-show-tour-failed {
+    appearance none
+    display inline-block
+    text-decoration none
+    color #1caae1
+    font-size 1.15em
+    background none
+    border 0
+    border-bottom 1px dotted
+    padding 0
+    margin .8em auto
+    TransitionHover()
+
+    &:visited {
+      color alpha(@color, 80%)
+      text-decoration none
+    }
+
+    &:hover {
+      color alpha(@color, 80%)
+      text-decoration none
+    }
+
+    &:active {
+      color alpha(@color, 90%)
+      text-decoration none
+    }
+  }
+
+  &-similar-tours-line {
+    appearance none
+    font-size .84em
+    font-weight 700
+    text-transform uppercase
+    display inline-block
+    min-width 200px
+    text-align center
+    color #ffffff
+    text-decoration none
+    border 1px solid
+    border-radius 4px
+    padding .4em
+    box-sizing border-box
+    background none
+
+    TransitionHover()
+
+
+    &:visited {
+      color alpha(@color, 90%)
+      text-decoration none
+    }
+
+    &:hover {
+      color alpha(@color, 90%)
+      text-decoration none
+    }
+
+    &:active {
+      color alpha(@color, 95%)
+      text-decoration none
+    }
+  }
+}

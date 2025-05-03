@@ -1,0 +1,96 @@
+/* Colors */
+
+// Brand palette
+$color-brand-white: #FFFFFF;
+
+$color-brand-grey-light: #E0E0E0;
+$color-brand-grey: #9B9B9B;
+$color-brand-grey-dark: #A1A1A1;
+$color-brand-grey-very-dark: #4A4A4A;
+$color-brand-black: #313140;
+$color-brand-blue: #0078be;
+$color-brand-blue-light: #3D95FB;
+$color-brand-blue-pale: #D8EAFE;
+$color-brand-blue-very-pale: #F3F3FF;
+$color-brand-red: #FB4242;
+$color-brand-yellow: #FFCA00;
+$color-brand-yellow-bright: #FFD709;
+$color-brand-yellow-pale: #FFF6D4;
+$color-brand-moonSilver: #E1E1E1;
+$color-brand-darkViolet: #DBDBEB;
+$color-brand-etherAmethyst: #999999;
+$color-brand-lavenderMist: #F3F3FF;
+$color-brand-midnightSapphire: #032F4A40;
+$color-brand-ShadowObsidian: #00000080 ;
+$color-brand-paleOrange: #FEF2D0;
+
+// color variables
+$color-bg-primary: $color-brand-white;
+$color-bg-accent: $color-brand-blue-very-pale;
+$color-bg-paleYellow: $color-brand-yellow-pale;
+$color-bg-yellow: $color-brand-yellow;
+$color-bg-brightYellow: $color-brand-yellow-bright;
+$color-bg-tooltip: $color-brand-grey-very-dark;
+$color-bg-tooltip-dark: $color-brand-black;
+$color-bg-note: $color-brand-grey-light;
+
+$color-text-light: $color-brand-white; //  There are two base text colors in the project
+$color-text-dark: $color-brand-black;
+
+$color-text-note: $color-brand-grey;
+$color-text-note-dark: $color-brand-grey-dark;
+$color-text-accent: $color-brand-blue-light;
+$color-text-accent-dark: $color-brand-blue;
+$color-text-calendar-day-off: $color-brand-red;
+
+$color-field-label: $color-brand-grey-dark;
+
+$color-swiper-icons: $color-brand-white;
+
+$color-icon-primary: $color-brand-blue-light;
+$color-icon-secondary: $color-brand-grey;
+
+$color-error: $color-brand-red;
+
+$color-link: $color-brand-blue-light;
+$color-link-hover: $color-brand-blue;
+
+$color-border-primary: $color-brand-grey-light;
+$color-border-accent: $color-brand-blue-pale;
+$color-border-brand-dark: $color-brand-blue;
+$color-border-brand: $color-brand-grey-light;
+
+$color-border-icon-error: $color-brand-black;
+$color-border-icon-disabled: $color-brand-grey;
+
+$color-border-yellow: $color-brand-yellow;
+
+$color-selected-item: $color-brand-blue-pale;
+
+$color-scroll-thumb: $color-brand-grey;
+$color-scroll-track: $color-brand-grey-light;
+
+/* Shadows */
+$shadow-component-container: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+$shadow-component: 0 2px 4px rgba(3, 47, 74, 0.24), 4px 4px 8px rgba(3, 47, 74, 0.32);
+$shadow-tooltip-container: 4px 4px 16px 0 rgba(18, 102, 152, 0.08), 0 2px 20px 0 rgba(15, 85, 126, 0.04);
+
+
+/* Border radius */
+$border-radius-main: 8px;
+$border-radius-secondary: 2px;
+$border-radius-btn: 4px;
+
+/* Z-index layers  */
+$overlay-z-index: 20;
+$modal-z-index: 25;
+
+
+// local breakpoints
+$mobile-sm-screen: 'max-width: 479px';
+$mobile-screen: 'max-width: 759px';
+$tablet-sm-screen: 'max-width: 890px';
+$tablet-screen: 'max-width: 1024px';
+
+//grid bootstrap
+$md:"min-width: 576px";

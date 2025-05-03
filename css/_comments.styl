@@ -1,0 +1,119 @@
+.comments {
+  list-style none
+  margin 10px 0 30px
+  padding 0
+  font-size 1em
+
+  &_tripadvisor {
+
+  }
+
+  &__item {
+    border-top 1px solid #dfe0de
+    padding 20px 0
+
+    &:first-child {
+      border-top-color transparent
+      padding-top 0
+    }
+  }
+
+  &__rating {
+    float right
+    width 120px
+  }
+
+  &__header {
+    font-size 1.46em
+    color #1a83ba
+    margin 0 0 .6em
+
+    &:before {
+      content '«'
+    }
+
+    &:after {
+      content '»'
+    }
+  }
+
+  &__title {
+    margin 0 0 1em
+  }
+
+  &__positive {
+    font-size 15px
+    padding 0
+    margin 1em 0 0 0
+    color #313140
+    line-height 20px
+    height auto
+    overflow hidden
+    transition max-height .5s
+
+    &:before {
+      content 'Достоинства'
+      color #7fab19
+      font-weight 600
+      display block
+      font-size .9em
+    }
+
+    /*&_tripadvisor {
+      font-size 1em
+      max-height 4.2em
+
+      &:before {
+        display none
+      }
+    }*/
+
+    &_opened {
+      max-height 1000em
+    }
+  }
+
+  &__negative {
+    font-size 15px
+    padding 0
+    margin 1em 0 0 0
+    color #313140
+    line-height 20px
+    height auto
+    overflow hidden
+    transition max-height .5s
+
+    &:before {
+      content 'Недостатки'
+      color #ff0000
+      font-weight 600
+      display block
+      font-size .9em
+    }
+
+    &_opened {
+      max-height 1000em
+    }
+  }
+
+  &__controls {
+    margin .5em 0
+  }
+
+  &__toggle {
+    color #007bbc
+    display inline-block
+    text-decoration none
+    appearance none
+    padding 0
+    margin 0
+    border-bottom 1px dotted
+    transition border-bottom-color .2s, color .2s
+
+    &:hover {
+      border-bottom-color transparent
+      text-decoration none
+      color #39bceb
+    }
+  }
+}
