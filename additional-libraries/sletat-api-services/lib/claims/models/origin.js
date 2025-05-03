@@ -1,0 +1,90 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ClaimActualizationState = exports.ClaimBillStatus = exports.ClaimOrderStatus = exports.ClaimTransferDirectionType = exports.ClaimFlightType = exports.ClaimAviaFlightType = exports.ClaimPerosonTitle = exports.ClaimGender = void 0;
+var ClaimGender;
+(function (ClaimGender) {
+    ClaimGender[ClaimGender["Unknown"] = 0] = "Unknown";
+    ClaimGender[ClaimGender["Male"] = 1] = "Male";
+    ClaimGender[ClaimGender["Female"] = 2] = "Female";
+})(ClaimGender = exports.ClaimGender || (exports.ClaimGender = {}));
+var ClaimPerosonTitle;
+(function (ClaimPerosonTitle) {
+    ClaimPerosonTitle[ClaimPerosonTitle["Unknown"] = 0] = "Unknown";
+    ClaimPerosonTitle[ClaimPerosonTitle["MR"] = 1] = "MR";
+    ClaimPerosonTitle[ClaimPerosonTitle["MRS"] = 2] = "MRS";
+    ClaimPerosonTitle[ClaimPerosonTitle["CHD"] = 3] = "CHD";
+    ClaimPerosonTitle[ClaimPerosonTitle["INF"] = 4] = "INF";
+})(ClaimPerosonTitle = exports.ClaimPerosonTitle || (exports.ClaimPerosonTitle = {}));
+var ClaimAviaFlightType;
+(function (ClaimAviaFlightType) {
+    ClaimAviaFlightType[ClaimAviaFlightType["Regular"] = 0] = "Regular";
+    ClaimAviaFlightType[ClaimAviaFlightType["Charter"] = 1] = "Charter";
+})(ClaimAviaFlightType = exports.ClaimAviaFlightType || (exports.ClaimAviaFlightType = {}));
+var ClaimFlightType;
+(function (ClaimFlightType) {
+    ClaimFlightType[ClaimFlightType["Departure"] = 0] = "Departure";
+    ClaimFlightType[ClaimFlightType["Return"] = 1] = "Return";
+    ClaimFlightType[ClaimFlightType["Intermediate"] = 2] = "Intermediate";
+})(ClaimFlightType = exports.ClaimFlightType || (exports.ClaimFlightType = {}));
+var ClaimTransferDirectionType;
+(function (ClaimTransferDirectionType) {
+    ClaimTransferDirectionType[ClaimTransferDirectionType["ToHotel"] = 0] = "ToHotel";
+    ClaimTransferDirectionType[ClaimTransferDirectionType["ToAirport"] = 1] = "ToAirport";
+})(ClaimTransferDirectionType = exports.ClaimTransferDirectionType || (exports.ClaimTransferDirectionType = {}));
+var ClaimOrderStatus;
+(function (ClaimOrderStatus) {
+    ClaimOrderStatus[ClaimOrderStatus["Unknown"] = 0] = "Unknown";
+    ClaimOrderStatus[ClaimOrderStatus["AwaitingConfirmation"] = 1] = "AwaitingConfirmation";
+    ClaimOrderStatus[ClaimOrderStatus["PaymentPending"] = 2] = "PaymentPending";
+    ClaimOrderStatus[ClaimOrderStatus["AwaitingHold"] = 3] = "AwaitingHold";
+    ClaimOrderStatus[ClaimOrderStatus["AwaitingHoldVerification"] = 4] = "AwaitingHoldVerification";
+    ClaimOrderStatus[ClaimOrderStatus["HoldFailed"] = 5] = "HoldFailed";
+    ClaimOrderStatus[ClaimOrderStatus["Holded"] = 6] = "Holded";
+    ClaimOrderStatus[ClaimOrderStatus["BookingRequest"] = 7] = "BookingRequest";
+    ClaimOrderStatus[ClaimOrderStatus["ConfirmedByTourOperator"] = 8] = "ConfirmedByTourOperator";
+    ClaimOrderStatus[ClaimOrderStatus["Canceled"] = 9] = "Canceled";
+    ClaimOrderStatus[ClaimOrderStatus["AwaitingAccept"] = 10] = "AwaitingAccept";
+    ClaimOrderStatus[ClaimOrderStatus["Accepted"] = 11] = "Accepted";
+    ClaimOrderStatus[ClaimOrderStatus["AcceptFailed"] = 12] = "AcceptFailed";
+    ClaimOrderStatus[ClaimOrderStatus["AwaitingRefund"] = 13] = "AwaitingRefund";
+    ClaimOrderStatus[ClaimOrderStatus["RefundFailed"] = 14] = "RefundFailed";
+    ClaimOrderStatus[ClaimOrderStatus["Refunded"] = 15] = "Refunded";
+    ClaimOrderStatus[ClaimOrderStatus["Completed"] = 16] = "Completed";
+    ClaimOrderStatus[ClaimOrderStatus["AwaitingVoid"] = 17] = "AwaitingVoid";
+    ClaimOrderStatus[ClaimOrderStatus["VoidFailed"] = 18] = "VoidFailed";
+    ClaimOrderStatus[ClaimOrderStatus["Voided"] = 19] = "Voided";
+})(ClaimOrderStatus = exports.ClaimOrderStatus || (exports.ClaimOrderStatus = {}));
+var ClaimBillStatus;
+(function (ClaimBillStatus) {
+    ClaimBillStatus[ClaimBillStatus["Unknown"] = 0] = "Unknown";
+    ClaimBillStatus[ClaimBillStatus["AwaitingConfirmation"] = 1] = "AwaitingConfirmation";
+    ClaimBillStatus[ClaimBillStatus["PaymentPending"] = 2] = "PaymentPending";
+    ClaimBillStatus[ClaimBillStatus["AwaitingHold"] = 3] = "AwaitingHold";
+    ClaimBillStatus[ClaimBillStatus["AwaitingHoldVerification"] = 4] = "AwaitingHoldVerification";
+    ClaimBillStatus[ClaimBillStatus["HoldFailed"] = 5] = "HoldFailed";
+    ClaimBillStatus[ClaimBillStatus["Holded"] = 6] = "Holded";
+    ClaimBillStatus[ClaimBillStatus["Canceled"] = 9] = "Canceled";
+    ClaimBillStatus[ClaimBillStatus["AwaitingAccept"] = 10] = "AwaitingAccept";
+    ClaimBillStatus[ClaimBillStatus["Accepted"] = 11] = "Accepted";
+    ClaimBillStatus[ClaimBillStatus["AcceptFailed"] = 12] = "AcceptFailed";
+    ClaimBillStatus[ClaimBillStatus["AwaitingRefund"] = 13] = "AwaitingRefund";
+    ClaimBillStatus[ClaimBillStatus["RefundFailed"] = 14] = "RefundFailed";
+    ClaimBillStatus[ClaimBillStatus["Refunded"] = 15] = "Refunded";
+    ClaimBillStatus[ClaimBillStatus["AwaitingVoid"] = 17] = "AwaitingVoid";
+    ClaimBillStatus[ClaimBillStatus["VoidFailed"] = 18] = "VoidFailed";
+    ClaimBillStatus[ClaimBillStatus["Voided"] = 19] = "Voided";
+})(ClaimBillStatus = exports.ClaimBillStatus || (exports.ClaimBillStatus = {}));
+var ClaimActualizationState;
+(function (ClaimActualizationState) {
+    ClaimActualizationState[ClaimActualizationState["Unknown"] = 0] = "Unknown";
+    ClaimActualizationState[ClaimActualizationState["NotRequired"] = 1] = "NotRequired";
+    ClaimActualizationState[ClaimActualizationState["Required"] = 2] = "Required";
+    ClaimActualizationState[ClaimActualizationState["InProgress"] = 3] = "InProgress";
+    ClaimActualizationState[ClaimActualizationState["Completed"] = 4] = "Completed";
+    ClaimActualizationState[ClaimActualizationState["Failed"] = 5] = "Failed";
+    ClaimActualizationState[ClaimActualizationState["IncorrectCurrency"] = 6] = "IncorrectCurrency";
+    ClaimActualizationState[ClaimActualizationState["HotelIsInStop"] = 7] = "HotelIsInStop";
+    ClaimActualizationState[ClaimActualizationState["DepartureIsInStop"] = 8] = "DepartureIsInStop";
+    ClaimActualizationState[ClaimActualizationState["ReturnIsInStop"] = 9] = "ReturnIsInStop";
+    ClaimActualizationState[ClaimActualizationState["AuthenticationProblem"] = 10] = "AuthenticationProblem";
+})(ClaimActualizationState = exports.ClaimActualizationState || (exports.ClaimActualizationState = {}));
