@@ -52,8 +52,11 @@
     "react-collapse": "4.0.3",
     "react-dom": "18.2.0",
     "react-motion": "0.5.0",
-    "react-spinners": "0.17.0",
-    "uikit": "3.23.6"
+    "sletat-api-services": "file:./additional-libraries/sletat-api-services",
+    "sletat-common-utils": "file:./additional-libraries/sletat-common-utils",
+    "sletat-module-settings": "file:./additional-libraries/sletat-module-settings",
+    "sletat-ui-components": "file:./additional-libraries/sletat-ui-components",
+    "sletat-uikit2": "file:./additional-libraries/sletat-uikit2"
   },
   "devDependencies": {
     "@types/bem-cn": "2.1.1",
@@ -71,7 +74,7 @@
     "autoprefixer": "9.3.1",
     "awesome-typescript-loader": "5.2.1",
     "cross-env": "3.1.4",
-    "css-loader": "2.1.1",
+    "css-loader": "5.2.7",
     "cssnano": "4.1.10",
     "eslint": "8.50.0",
     "eslint-config-airbnb": "19.0.4",
@@ -89,7 +92,8 @@
     "gulp-stylus": "2.7.0",
     "gulp-svgstore": "6.1.0",
     "mini-css-extract-plugin": "0.5.0",
-    "postcss-loader": "3.0.0",
+    "postcss": "8.5.3",
+    "postcss-loader": "4.3.0",
     "precss": "4.0.0",
     "prettier": "3.0.3",
     "react-transform-catch-errors": "1.0.2",
